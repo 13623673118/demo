@@ -1,0 +1,282 @@
+html {
+  font-size: 100px; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-tap-highlight-color: transparent; }
+
+body, input, img, a, ul, h1, h2, h3, h4, h5, h6, p, li, i, em, b, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  text-decoration: none;
+  list-style: none;
+  font-family: "microsoft yahei",Helvetica,sans-serif;
+  box-sizing: border-box; }
+
+img {
+  border: 0; }
+
+a {
+  color: #333; }
+
+input {
+  outline: none; }
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 100px; } }
+
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 64.6875px; } }
+
+@media screen and (max-width: 412px) {
+  html {
+    font-size: 64.375px; } }
+
+@media screen and (max-width: 384px) {
+  html {
+    font-size: 60px; } }
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 58.59375px; } }
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 56.25px; } }
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 50px; } }
+
+.body {
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -ms-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease-in; }
+
+.body.move {
+  transform: translateX(-50%); }
+
+.list {
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -ms-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease;
+  position: fixed;
+  z-index: 999;
+  left: 100%;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #424242; }
+  .list li {
+    height: 1rem;
+    border-bottom: 2px solid #fff; }
+    .list li a {
+      display: block;
+      height: 100%;
+      line-height: 1rem;
+      color: #fff;
+      font-size: .3rem;
+      text-align: center; }
+      .list li a:active {
+        color: #f48137; }
+    .list li div {
+      width: 50%;
+      height: .40rem;
+      margin-top: .3rem;
+      float: left; }
+      .list li div:first-child {
+        border-right: 2px solid #fff; }
+      .list li div a {
+        display: block;
+        height: 100%;
+        line-height: .4rem;
+        color: #fff;
+        font-size: .3rem;
+        text-align: center; }
+        .list li div a:active {
+          color: #f48137; }
+
+.list.show {
+  transform: translateX(-100%); }
+
+.title {
+  width: 100%;
+  height: 1rem;
+  background: #fff;
+  border-bottom: 1px solid #4ec443;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0; }
+  .title .logo {
+    width: 2.78rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.24rem; }
+    .title .logo img {
+      width: 100%;
+      height: 100%; }
+  .title .return {
+    width: .42rem;
+    height: 0.36rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: .6rem; }
+    .title .return img {
+      width: 100%;
+      height: 100%; }
+
+#banner {
+  height: 3rem;
+  background: #eee;
+  padding-top: 1rem; }
+  #banner a {
+    display: block;
+    height: 100%; }
+    #banner a img {
+      width: 100%;
+      height: 2rem; }
+
+.news {
+  padding-top: .3rem;
+  margin-bottom: .2rem; }
+  .news h1 {
+    width: 50%;
+    transform: translateX(0.24rem);
+    height: .3rem;
+    color: #f48137;
+    font-size: .3rem;
+    line-height: .3rem;
+    padding-left: .2rem;
+    border-left: 2px solid #f48137;
+    font-weight: normal;
+    margin-bottom: .2rem; }
+  .news ul::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .news ul li {
+    width: 50%;
+    height: 2.05rem;
+    float: left; }
+    .news ul li:nth-child(1) {
+      background-image: url("../img/alliance-pic1.jpg");
+      background-size: cover; }
+    .news ul li:nth-child(2) {
+      background-image: url("../img/alliance-pic2.jpg");
+      background-size: cover; }
+    .news ul li:nth-child(3) {
+      background-image: url("../img/alliance-pic3.jpg");
+      background-size: cover; }
+    .news ul li:nth-child(4) {
+      background-image: url("../img/alliance-pic4.jpg");
+      background-size: cover; }
+    .news ul li a {
+      display: block;
+      height: 100%; }
+
+.work {
+  width: 5.92rem;
+  height: .78rem;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #ebebeb; }
+
+.location {
+  width: 5.92rem;
+  height: .78rem;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #ebebeb; }
+
+.list-box {
+  padding: 0 .24rem; }
+  .list-box::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .list-box li {
+    width: 100%;
+    height: 1.74rem;
+    border-bottom: 1px solid #ebebeb; }
+    .list-box li .logo {
+      width: 1.4rem;
+      height: 100%;
+      float: left; }
+      .list-box li .logo img {
+        width: 1.4rem;
+        height: 1.4rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto; }
+    .list-box li .introduce {
+      width: 3.3rem;
+      height: 100%;
+      float: left; }
+      .list-box li .introduce h1 {
+        line-height: .86rem;
+        font-size: .28rem;
+        text-align: center;
+        color: #565656;
+        margin-bottom: .2rem; }
+      .list-box li .introduce p {
+        line-height: .3rem;
+        font-size: .22rem;
+        text-align: center;
+        color: #838383; }
+    .list-box li .detail {
+      width: 1.2rem;
+      height: 100%;
+      float: left; }
+      .list-box li .detail a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 1.2rem;
+        height: .4rem;
+        border-radius: 5px;
+        background: #ff751c;
+        color: #fff;
+        font-size: .22rem;
+        font-weight: bold;
+        text-align: center;
+        line-height: .4rem; }
+
+.footer::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.footer li {
+  height: .6rem;
+  background: #353535;
+  border-bottom: 2px solid #7f7f7f; }
+  .footer li a {
+    display: block;
+    height: 100%;
+    color: #7f7f7f;
+    font-size: .3rem;
+    line-height: .6rem;
+    text-align: center; }

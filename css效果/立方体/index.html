@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="cube">
+            <div class="front"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <span class="in-front">前</span>
+            <span class="in-back">后</span>
+            <span class="in-left">左</span>
+            <span class="in-right">右</span>
+            <span class="in-top">上</span>
+            <span class="in-bottom">下</span>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+<script>
+function addDots(parentNode,color,opacity){
+    color=color||'#ace';
+    opacity=opacity||0.6;
+    for(var i=0;i<10;i++){
+        for(var j=0;j<10;j++){
+            $('<div>').css({
+                width:'20px',
+                height:'20px',
+                background:color,
+                boxSizing:'border-box',
+                border:'1px solid #000',
+                opacity:opacity
+            }).appendTo(parentNode)
+        }
+    }
+}
+var arr=['red','orange','blue','green','yellow','white'];
+$('.cube div').each(function(i,v){
+    arr.push($(v)[0].className)
+})
+
+for(var i=0;i<arr.length;i++){
+    addDots($('.cube > div').eq(i),arr[i],1)
+}
+
+$(document).mousedown(function (ev) {
+    $('.cube').css({animationPlayState:'paused'})
+});
+
+$(document).mouseup(function () {
+    $('.cube').css({animationPlayState:'running'})
+    $(this).unbind("mousemove");
+});
+</script>
+
+</html>

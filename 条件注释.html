@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<!--[if !IE]> -->
+    <script>
+        alert(1)
+    </script>
+ <!-- <![endif]-->
+</head>
+<body>
+    条件注释用于判断ie浏览器的版本并作出相应的应答。
+    写法：条件注释的写法和注释是一样的，因此ie以外的浏览器会把他们看做注释处理。
+            gt:选择条件以上的版本
+            gte：选择条件以上的版本，包括条件
+            lt:选择条件以下的版本
+            lte：选择条件以下的版本，包括条件
+            !：选择条件之外的版本
+
+    <!--[if IE]>用于ie9（包含ie9）以下的版本<![endif]-->
+    <!--[if !IE]> -->用于不是ie浏览器的版本（包括ie10、ie11、edge） <!-- <![endif]-->
+
+
+
+
+    <!--[if gte IE 9]>
+        如果ie版本大于等于ie9,用3.2.1版本jquery
+        <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+        如果ie版本小于ie9，用1.9.1版本jquery
+        <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if !IE]> -->
+    如果不是ie浏览器，用3.2.1版本jquery
+    <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <![endif]-->
+
+</body>
+</html>

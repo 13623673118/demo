@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+	<head>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=UTF-8">
+		<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+		<script src="http://cdn.bootcss.com/three.js/r68/three.min.js"></script>
+		<script type="text/javascript" src="js/onebook.js"></script>
+		<script>
+			$(function() {
+				var src = [
+					'images/1.png',
+					'images/2.jpg', 'images/3.png',
+					'images/4.jpg', 'images/5.jpg',
+					'images/6.jpg', 'images/7.jpg',
+					'images/8.jpg', 'images/9.png',
+					'images/10.jpg', 'images/11.jpg',
+					'images/12.jpg'
+				];
+				$('#photobook').onebook(src, {
+					skin: ['light', 'dark'],
+					border: 0,
+					cesh: false
+				});
+			});
+		</script>
+		<style>
+			html,
+			body {
+				width: 100%;
+				margin: 0px;
+				padding: 0px;
+				background: #ace;
+				color: #000000;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="photobook"></div>
+    </body>
+
+</html>

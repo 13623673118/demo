@@ -1,0 +1,10 @@
+.content{
+    padding:30rpx;
+}
+.title{
+    font-size:19pt;
+    margin-bottom:40rpx;
+}
+.body{
+    font-size:12pt;
+}

@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    background:#333;
+    margin: 0;
+}
+
+@keyframes rotate {
+    0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+    100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);}
+}
+
+.box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+}
+.box .cube {
+    width: 202px;
+    height: 202px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 10s infinite ease;
+    animation-play-state: running;
+}
+.box .cube >div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    font-weight: bold;
+    color: #FFFFFF;
+    transition: all 1.5s ease;
+    display:flex;
+    flex-wrap: wrap;
+}
+.box .cube .front {
+      transform: translateZ(100px);
+}
+    .box .cube .back {
+      transform: translateZ(-100px) rotateY(-180deg); }
+    .box .cube .left {
+      transform: translateX(-100px) rotateY(-90deg); }
+    .box .cube .right {
+      transform: translateX(100px) rotateY(90deg); }
+    .box .cube .top {
+      transform: translateY(-100px) rotateX(90deg); }
+    .box .cube .bottom {
+      transform: translateY(100px) rotateX(-90deg); }
+    .box .cube span {
+      display: block;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #FFFFFF;
+      border: 1px solid black;
+      background: url(girl.jpg) center 0/contain no-repeat;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      transition: all .5s ease; }
+    .box .cube .in-front {
+      transform: translateZ(50px); }
+    .box .cube .in-back {
+      transform: translateZ(-50px) rotateY(180deg); }
+    .box .cube .in-left {
+      transform: translateX(50px) rotateY(90deg); }
+    .box .cube .in-right {
+      transform: translateX(-50px) rotateY(-90deg); }
+    .box .cube .in-top {
+      transform: translateY(50px) rotateX(90deg); }
+    .box .cube .in-bottom {
+      transform: translateY(-50px) rotateX(-90deg); }
+
+  .box:hover .front {
+    transform: translateZ(200px) rotateY(-180deg); }
+  .box:hover .back {
+    transform: translateZ(-200px) rotateY(180deg); }
+  .box:hover .left {
+    transform: translateX(200px) rotateY(-90deg); }
+  .box:hover .right {
+    transform: translateX(-200px) rotateY(-90deg); }
+  .box:hover .top {
+    transform: translateY(200px) rotateX(-90deg); }
+  .box:hover .bottom {
+    transform: translateY(-200px) rotateX(90deg); }
+  .box:hover span.in-front {
+    transform: translateZ(100px) rotateY(-180deg); }
+  .box:hover span.in-back {
+    transform: translateZ(-100px) rotateY(180deg); }
+  .box:hover span.in-left {
+    transform: translateX(100px) rotateY(-90deg); }
+  .box:hover span.in-right {
+    transform: translateX(-100px) rotateY(-90deg); }
+  .box:hover span.in-top {
+    transform: translateY(100px) rotateX(-90deg); }
+  .box:hover span.in-bottom {
+    transform: translateY(-100px) rotateX(90deg); }

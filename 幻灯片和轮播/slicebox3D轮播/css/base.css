@@ -1,0 +1,36 @@
+@charset "UTF-8";
+html {
+    font-size: 100px;
+}
+
+body, input, img, a, ul, h1, h2, h3, h4, h5, h6, p, li, i, em, b, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    font-family: Helvetica, "微软雅黑", sans-serif;
+    box-sizing: border-box;
+    outline:none;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    color: #333;
+}
+
+input {
+    outline: none;
+}
+*{
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    position:relative;
+}

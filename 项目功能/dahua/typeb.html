@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>大华公园世家</title>
+    <link href="http://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <link href="http://cdn.bootcss.com/Swiper/3.4.1/css/swiper.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/Swiper/3.4.1/js/swiper.jquery.js"></script>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/type.css">
+</head>
+<body>
+<div class="full" id="type">
+    <div class="mask"></div>
+    <div class="header">
+        <a href="types.html"><img src="img/huxing-icon.png" alt=""/></a>
+        公园学府
+    </div>
+    <ul class="lists">
+        <li><a href="#">
+            <img src="img/huxing-icon2.png" alt=""/>
+            <h1>两室两厅一卫</h1>
+            <h2>建筑面积约:94.73m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon4.png" alt=""/>
+            <h1>三室两厅一卫</h1>
+            <h2>建筑面积约:104.57m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon5.png" alt=""/>
+            <h1>三室两厅两卫</h1>
+            <h2>建筑面积约:112.29m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon13.png" alt=""/>
+            <h1>两室两厅一卫</h1>
+            <h2>建筑面积约:86.7m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon14.png" alt=""/>
+            <h1>两室两厅一卫</h1>
+            <h2>建筑面积约:86.32m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon9.png" alt=""/>
+            <h1>三室两厅两卫</h1>
+            <h2>建筑面积约:112.89m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon15.png" alt=""/>
+            <h1>三室两厅两卫</h1>
+            <h2>建筑面积约:113.59m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon10.png" alt=""/>
+            <h1>四室两厅两卫</h1>
+            <h2>建筑面积约:147.01m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+    </ul>
+    <div class="swiper-container" id="imgs">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="img/gaoceng2.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/gaoceng4.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/gaoceng5.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/gaoceng6.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/gaoceng7.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/gaoceng8.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/gaoceng9.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/gaoceng10.jpg" alt=""/></a></div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var Swiper = new Swiper('#imgs', {
+        direction: 'horizontal',
+        loop: true,
+        speed: 400,
+        watchSlidesProgress:true,
+        watchSlidesVisibility:true
+    });
+
+    var lists = $('.lists li');
+    lists.each(function (i, v) {
+        $(v).delay(i * 200).queue(function () {
+            $(v).addClass('animated bounceInLeft')
+        });
+    });
+
+    $('.lists li').on('click',function(){
+        $('#imgs').addClass('show');
+        Swiper.slideTo($(this).index()+1,0)
+
+    });
+    $('#imgs').on('click',function(){
+        $(this).removeClass('show')
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手风琴列表</title>
+    <link href="http://www.jq22.com/jquery/font-awesome.4.6.0.css" rel="stylesheet" media="screen">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <link rel="stylesheet" href="lists.css"/>
+    <link rel="stylesheet" href="demo.css"/>
+    <script src="metismenu.js"></script>
+</head>
+<body>
+<ul id="menu" class="metismenu">
+    <li>
+        <a href="#">个人中心<i class="fa fa-angle-right fa-lg"></i></a>
+        <ul>
+            <li><a href="#">待办任务中心</a></li>
+            <li><a href="#">嘉诺资源库</a></li>
+            <li><a href="#">通讯录</a></li>
+            <li><a href="#">会议室预约</a></li>
+            <li><a href="#">缺勤申请</a></li>
+            <li><a href="#">出团申请</a></li>
+            <li><a href="#">打卡异常申请</a></li>
+            <li><a href="#">增加调休申请</a></li>
+            <li><a href="#">我的考勤记录</a></li>
+            <li><a href="#">个人详细信息</a></li>
+            <li><a href="#">修改个人资料</a></li>
+            <li><a href="#">战报数据</a></li>
+        </ul>
+    </li>
+    <li class="active">
+        <a href="#">行政管理<i class="fa fa-angle-right fa-lg"></i></a>
+        <ul>
+            <li><a href="#">培训课程</a></li>
+            <li><a href="#">嘉小悦</a></li>
+            <li><a href="#">活动报名</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">人事管理<i class="fa fa-angle-right fa-lg"></i></a>
+        <ul>
+            <li><a href="#">员工管理</a></li>
+            <li><a href="#">考勤管理</a></li>
+            <li>
+                <a href="#">考勤管理<i class="fa fa-angle-right fa-lg"></i></a>
+                <ul>
+                    <li><a href="#">11111</a></li>
+                    <li><a href="#">22222</a></li>
+                    <li><a href="#">33333</a></li>
+                    <li><a href="#">44444</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">切换到jazz.2.0</a>
+    </li>
+</ul>
+<script>
+    $('#menu').metisMenu({});
+</script>
+</body>
+</html>

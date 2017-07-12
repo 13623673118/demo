@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>科大绿建</title>
+    <link rel="stylesheet" href="css/pollution.css">
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+	<div class="nav">
+	    <div class="logo"><a href="index.html#six"></a></div>
+	    <div class="title">环保研究院</div>
+	</div>
+	<div class="inner">
+		<div class="head">
+			<img src="img/yanjiu-banner2.jpg" class="bg" alt="">
+			<img src="img/yanjiuyuan-icon.png" class="mill new" alt="">
+		</div>
+		<div class="body">
+			<h1>科大绿建新风实验室简介</h1>
+			<p>中国空气污染危机全方位地影响着人类的健康，油漆甲醛、工业污染、粉尘、二手烟、pm2.5、汽车尾气、细菌病毒、花粉蚊虫等已成为污染我们健康的主要来源，新风系统全天空气置换，将室内有害气体排出室外进行空气置换，降低传染性疾病的传播，避免缺氧，让生活更有活力。通过空气循环交换系统达到室内空气纯净，保障人类的呼吸健康。</p>
+			<p>科大绿建是一家环保技术服务型公司，在成立初期就意识到我们肩上的责任和义务，公司为室内空气治理投入研发经费，旨在改善室内环境，让大家免除环境污染带来的危害。</p>
+			<p>绿建新风实验室是陕西科大绿建环保技术服务有限公司与科大高新学院建工学院环境工程系合作建设的西北首家新风机实验室，实验室集产品研发、工程展示参观、学生实习为一体的功能型产学研实验室平台。</p>
+			<p>经过不懈努力，绿建新风实验室已与享有盛誉的意大利威特奇、英国御风、美国百朗、造梦者等高端通风行业领导者达成合作意向，在新风机领域拥有优秀的研发团队和精良的生产设备，我们携手共进，为学校学生提供更专业的学习平台，为用户提供纯净的室内空气享受，我们以持续改善室内空气环境，营造绿色住宅空间为己任。已为多家家企业宿舍、多媒体室、浴室等提供功能型新风机，让大家在自然、健康、舒适的环境中学习和工作。</p>
+		</div>
+		<div class="footer">
+			<div class="team">
+				<img src="img/weixin.png" alt="">
+				<img src="img/weibo.png" alt="">
+				<ul class="ewm">
+					<li><img src="img/weixinewm.jpg" alt=""></li>
+					<li><img src="img/weiboewm.png" alt=""></li>
+				</ul>
+			</div>
+			<div class="name">陕西科大绿建环保技术服务有限公司 Copyright © 2015</div>
+			<ul class="btm">
+				<li>陕ICP备15005822号</li>
+				<li><a href="http://www.bozhiyingxiao.com/">技术支持：西安博智</a></li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		var btn = $('.footer .team > img');
+		var ewm=$('.footer .team .ewm li');
+		btn.on('click',function(){
+			ewm.css({display:'none'});
+			ewm.eq($(this).index()).css({display:'block'});
+			return false;
+		});
+		$('body').on('click',function(){
+			ewm.css({display:'none'})
+		});
+	</script>
+</body>
+</html>

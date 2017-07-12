@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://cdn.bootcss.com/modernizr/2010.07.06dev/modernizr.min.js"></script>
+</head>
+
+<body>
+    <style>
+        #boder {
+            width: 300px;
+            height: 300px;
+            border-width: 1rem;
+            border-style: solid;
+            border-color: #333;
+        }
+    </style>
+    <div id="boder"></div>
+    <!-- 标签选择器 -->
+    <style>
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #background {
+            height: 50px;
+        }
+
+        #background li {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+            float: left;
+            background: #333;
+        }
+
+        #background li:nth-child(n+4) {
+            /*从第四个直到最后一个*/
+            background: pink
+        }
+
+        #background li:nth-child(-n+3) {
+            /*选中li的前3个*/
+            background: green
+        }
+
+        #background li:nth-last-child(-n+3) {
+            /*选中li的后3个*/
+            background: green
+        }
+
+        #background li p:only-child {
+            /*当所选元素是唯一子元素时*/
+            color: #fff;
+        }
+    </style>
+    <ul id="background">
+        <li>
+            <p>111</p>
+            <p>111</p>
+        </li>
+        <li>
+            <p>111</p>
+            <p>111</p>
+        </li>
+        <li>
+            <p>111</p>
+            <p>111</p>
+        </li>
+        <li>
+            <p>111</p>
+        </li>
+        <li>
+            <p>111</p>
+        </li>
+        <li>
+            <p>111</p>
+            <p>111</p>
+        </li>
+        <li>
+            <p>111</p>
+
+        </li>
+        <li>
+            <p>111</p>
+            <p>111</p>
+
+        </li>
+    </ul>
+    <!-- 标签选择器 -->
+    <!-- 属性选择器 -->
+    <style>
+        .desc {
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+            text-shadow: 0 1px red, 0 -1px red, 1px 0 red, -1px 0 red;
+        }
+
+        .text {
+            margin: 40px 0;
+            width: 600px;
+            line-height: 1.35
+        }
+
+        .text::first-letter {
+            /*选择文本块的第于个元素*/
+            float: left;
+            padding-left: 10px;
+            font-size: 24px;
+            color: #ace;
+            font-family: "宋体";
+            font-weight: bold;
+            text-shadow: 1px 0px 1px red, 0px 1px 1px red, -1px 0px 1px red, 0px -1px 1px red;
+        }
+
+        .text::first-line {
+            font-family: "微软雅黑"
+        }
+
+         ::selection {
+            /*浏览器选中时的样式  只接受俩个属性Background和color*/
+            background: pink;
+            color: #fff;
+        }
+
+        [type] {
+            /*属性选择器可以不需要标签选择器前缀*/
+            color: pink
+        }
+
+        .text[type] {
+            /*选中.text中有type这个类的标签*/
+            color: pink
+        }
+
+        .text[type|="a"] {
+            /*选中.text中有type属性为a或者是以a- 开始的属性的标签*/
+            color: green
+        }
+
+        .text[type~="a"] {
+            /*选中.text中有type属性值中包含a的标签*/
+            color: blue;
+        }
+
+        .text[type^="d"] {
+            /*选中.text中有type属性值中以d开头的标签*/
+            color: Maroon;
+        }
+
+        .text[type*="d"] {
+            /*选中.text中有type属性值中任意位置有d的标签*/
+            color: springgreen;
+        }
+
+        .text[type$="d"] {
+            /*选中.text中有type属性值中以d结束的标签*/
+            color: #ace;
+        }
+    </style>
+    <p class="desc" type="a">因为使用了::selection,所以当你选中这张网页里的内容时，文字会变成白色，背景变成粉红色。</p>
+    <p class="text" type="a-ctive">独立寒秋，湘江北去，橘子洲头。看万山红遍，层林尽染；漫江碧透，百舸争流。鹰击长空，鱼翔浅底，万类霜天竞自由。怅寥廓，问苍茫大地，谁主沉浮？携来百侣曾游。忆往昔峥嵘岁月稠。恰同学少年，风华正茂；书生意气，挥斥方遒。</p>
+    <p class="text" type="a b c active">独立寒秋，湘江北去，橘子洲头。看万山红遍，层林尽染；漫江碧透，百舸争流。鹰击长空，鱼翔浅底，万类霜天竞自由。怅寥廓，问苍茫大地，谁主沉浮？携来百侣曾游。忆往昔峥嵘岁月稠。恰同学少年，风华正茂；书生意气，挥斥方遒。</p>
+    <p class="text" type="cwqed">独立寒秋，湘江北去，橘子洲头。看万山红遍，层林尽染；漫江碧透，百舸争流。鹰击长空，鱼翔浅底，万类霜天竞自由。怅寥廓，问苍茫大地，谁主沉浮？携来百侣曾游。忆往昔峥嵘岁月稠。恰同学少年，风华正茂；书生意气，挥斥方遒。</p>
+    <p class="text" type="dsdeqw">独立寒秋，湘江北去，橘子洲头。看万山红遍，层林尽染；漫江碧透，百舸争流。鹰击长空，鱼翔浅底，万类霜天竞自由。怅寥廓，问苍茫大地，谁主沉浮？携来百侣曾游。忆往昔峥嵘岁月稠。恰同学少年，风华正茂；书生意气，挥斥方遒。</p>
+    <p class="text" type="eeqe">独立寒秋，湘江北去，橘子洲头。看万山红遍，层林尽染；漫江碧透，百舸争流。鹰击长空，鱼翔浅底，万类霜天竞自由。怅寥廓，问苍茫大地，谁主沉浮？携来百侣曾游。忆往昔峥嵘岁月稠。恰同学少年，风华正茂；书生意气，挥斥方遒。</p>
+    <!-- 属性选择器 -->
+    <!-- 边框 -->
+    <style>
+        #border {
+            display: flex;
+            width: 600px;
+            height: 50px;
+        }
+
+        #border li {
+            box-sizing: border-box;
+            flex-grow: 1;
+            margin: 0 10px;
+            border-width: 10px;
+            border-color: #333;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        #border li:nth-child(1) {
+            border-style: double;
+        }
+
+        #border li:nth-child(2) {
+            border-style: groove;
+        }
+
+        #border li:nth-child(3) {
+            border-style: ridge;
+        }
+
+        #border li:nth-child(4) {
+            border-style: inset;
+        }
+
+        #border li:nth-child(5) {
+            border-style: outset;
+            -webkit-border-top-colors: red green blue pink maroon;
+            -o-border-top-colors: red green blue pink maroon;
+            -ms-border-top-colors: red green blue pink maroon;
+            -moz-border-top-colors: red green blue pink maroon;
+        }
+    </style>
+    <ul id="border">
+        <li>double</li>
+        <li>groove</li>
+        <li>ridge</li>
+        <li>inset</li>
+        <li>outset</li>
+    </ul>
+    <!-- 边框 -->
+    <!-- 边框图像 -->
+    <style>
+        #bd-img {
+            box-sizing: border-box;
+            margin: 30px;
+            width: 400px;
+            height: 400px;
+            border: 20px solid red;
+            background-clip: border-box;
+            border-image-source: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495527004&di=27d8d0c6691bfc4657b3ae395b97cfa9&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F05a9cc554a994500000115a8941f75.jpg);
+
+            /*图像边框的分解尺寸,可以设置1,2,3,4个值*/
+            border-image-slice: 10% 10% 10% 10%;
+
+            /*图像边框的宽度,可以设置1,2,3,4个值*/
+            border-image-width: 20px;
+
+            /*border-image的重复方式第一个定义上下边框水平方向上重复，第二个定义左右边框在垂直方向上的重复。repeat:中间向俩端不断平铺。round：拉伸或压缩背景图使平铺正好显示在区域内。 stretch：吧相应的切片拉伸至边框大小*/
+            border-image-repeat: round round;
+        }
+
+        #bd-rdu {
+            width: 300px;
+            height: 100px;
+            background: #333;
+            border: 30px solid red;
+            border-width: 10px 20px 30px 40px;
+            border-radius: 100px;
+        }
+    </style>
+    <div id='bd-img'></div>
+    <div id='bd-rdu'></div>
+    <!-- 边框图像 -->
+    <!-- 背景图像 -->
+    <style>
+        #bg {
+            width: 400px;
+            height: 400px;
+            border: 20px solid #333;
+            padding: 20px;
+            margin: 20px;
+            background: green url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495527004&di=27d8d0c6691bfc4657b3ae395b97cfa9&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F05a9cc554a994500000115a8941f75.jpg) 0/300px 300px no-repeat;
+            background-origin: border-box;
+            background-origin: padding-box;
+            background-origin: content-box;
+            /*定义背景部分的裁切规则  border-box  padding-box  content-box*/
+            background-clip: content-box;
+        }
+    </style>
+    <div id="bg"></div>
+    <!-- 背景图像 -->
+
+
+
+    <!-- css变量 -->
+    <style>
+         :root {
+            --blue: #ace;
+            --num: 600px;
+            --color: #333;
+            --radiu: 150px;
+        }
+
+        #bianliang {
+            width: var(--num);
+            background: var(--color);
+            color: var(--blue);
+            border-radius: var(calc(--num)*1px/2);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            /*英文排版或中英文混排时，规定长文本和长的英文换行，但是会把长英文截断，增加阅读难度。*/
+            word-wrap: break-word;
+            word-break: break-all;
+            /*用来改变盒容器的大小，主要目的是为了增强用户体验,ie完全不兼容  resize：none|both|horizontal|vertical|inherit*/
+            resize: both;
+        }
+    </style>
+    <div id="bianliang">这是一行文字，超过之后会出现省略号;这是一行文字，超过之后会出现省略号;这是一行文字，超过之后会出现省略号;这是一行文字，超过之后会出现省略号;这是一行文字，超过之后会出现省略号;</div>
+    <!-- css变量 -->
+    <!-- 文本折行 -->
+    <p style="overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;">
+        这是一段文本，在超出俩行之后会出现省略号;这是一段文本，在超出俩行之后会出现省略号;这是一段文本，在超出俩行之后会出现省略号;这是一段文本，在超出俩行之后会出现省略号;这是一段文本，在超出俩行之后会出现省略号;这是一段文本，在超出俩行之后会出现省略号;这是一段文本，在超出俩行之后会出现省略号;这是一段文本，在超出俩行之后会出现省略号;这是一段文本，在超出俩行之后会出现省略号;这是一段文本，在超出俩行之后会出现省略号;这是一段文本，在超出俩行之后会出现省略号;这是一段文本，在超出俩行之后会出现省略号;这是一段文本，在超出俩行之后会出现省略号;这是一段文本，在超出俩行之后会出现省略号;这是一段文本，在超出俩行之后会出现省略号;
+    </p>
+    <!-- 文本折行 -->
+    <!-- 渐变 -->
+    <style>
+        #gradient {
+            width: 30vh;
+            height: 30vh;
+            border-radius: 100%;
+            /*径向渐变可以规定渐变的形状 ellipse椭圆和circle圆,并且可以偏离圆心的渐变*/
+            /*background: radial-gradient( circle at 70% 30%, red 10%,blue 50%,red 80%);*/
+            background: radial-gradient( ellipse at 70% 30%, red 10%, blue 50%, red 80%);
+        }
+    </style>
+    <div id="gradient"></div>
+    <!-- 渐变 -->
+    <!-- 过渡和变形 -->
+    <style>
+        @keyframes rotate {
+            0% {
+                transform: rotate3d(1, 0.8, 0.6, 0);
+            }
+            100% {
+                transform: rotate3d(2, 0.8, 0.6, 360deg);
+            }
+        }
+
+        #cube {
+            width: 200px;
+            height: 200px;
+            margin: 100px;
+            transform-style: preserve-3d;
+            /* 规定perspective的原点角度 默认 center center */
+            perspective-origin: left bottom;
+            transform: rotate3d(1, 1, 1, 45deg);
+            position: relative;
+            perspective: 20000px;
+            animation: rotate 5s linear infinite both;
+        }
+#cube:hover{
+    animation-play-state: paused;
+}
+        #cube div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            border: 1px solid #333;
+            background: #ace;
+            opacity: 0.6;
+        }
+
+        .qian {
+            transform: translateZ(100px);
+        }
+
+        .hou {
+            transform: translateZ(-100px) rotateY(-180deg);
+        }
+
+        .zuo {
+            transform: translateX(-100px) rotateY(-90deg);
+        }
+
+        .you {
+            transform: translateX(100px) rotateY(90deg);
+        }
+
+        .shang {
+            transform: translateY(-100px) rotateX(90deg);
+        }
+
+        .xia {
+            transform: translateY(100px) rotateX(-90deg);
+        }
+    </style>
+    <div id="cube">
+        <div class="qian"></div>
+        <div class="hou"></div>
+        <div class="zuo"></div>
+        <div class="you"></div>
+        <div class="shang"></div>
+        <div class="xia"></div>
+    </div>
+
+
+
+
+    <style>
+        #scale {
+            width: 30vh;
+            height: 30vh;
+            background: #333;
+            color: #fff;
+            transition: .6s;
+            transform-style: preserve-3d;
+            transform: translateX(50px) rotateX(45deg) rotateZ(-45deg);
+        }
+
+        #scale:hover {
+            /*transform: scale(-0.8);*/
+            transform: translateX(50px) rotateX(-45deg) rotateZ(-45deg) translateZ(-50px);
+        }
+    </style>
+    <div id="scale">transform:scale可以取负值，意思是让元素先翻转再缩放</div>
+    <!-- 过渡和变形 -->
+    <!-- 背部不可见 -->
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+
+        #hidden {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            transition: 1s;
+            transform-style: preserve-3d;
+        }
+
+        #hidden div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            top: 0;
+            left: 0;
+            color: #fff;
+        }
+
+        #hidden .front {
+            background: red;
+            z-index: 9;
+        }
+
+        #hidden .back {
+            background: blue;
+            transform: rotateY(180deg);
+        }
+
+        .box:hover #hidden {
+            transform: rotateY(180deg);
+        }
+    </style>
+    <div class="box">
+        <div id="hidden">
+            <div class="front">鼠标移入会显示这个容器的背面（在旋转的过程中容器会横向先缩小为0而触发hover，因此在容器外加一层容器可以使动画看起来更和谐）</div>
+            <div class="back">这是容器的背面</div>
+        </div>
+    </div>
+    <!-- 背部不可见 -->
+
+    <!-- 练习 -->
+    <style>
+        #demo {
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            margin: 50px 0;
+            perspective: 1000;
+        }
+        #demo .item {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 0.4s;
+            -webkit-transition: 0.4s;
+            -ms-transition: 0.4s;
+            -moz-transition: 0.4s;
+            -o-transition: 0.4s;
+            transition: 0.4s;
+        }
+
+        .item img {
+            position: absolute;
+            top: 0;
+            -webkit-transform: translateZ(100px);
+            -o-transform: translateZ(100px);
+            -ms-transform: translateZ(100px);
+            -moz-transform: translateZ(100px);
+            transform: translateZ(100px);
+            -webkit-transition: .6s;
+            -moz-transition: .6s;
+            -ms-transition: .6s;
+            -o-transition: .6s;
+            transition: .6s;
+        }
+
+        #demo p {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: red;
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        #demo:hover .item {
+            transform: translateZ(-100px) rotateX(90deg);
+        }
+        .no-borderimage div{
+            background: red;
+        }
+    </style>
+    <div id="demo">
+        <div class="item">
+            <img src="img/timg.jpg" alt="">
+            <p>hello.wrold</p>
+        </div>
+    </div>
+    <style>
+        input{
+            width: 100%;
+            border:1px solid #ccc;
+            box-sizing: border-box;
+            height: 30px;
+            outline: none;
+            text-align: center;
+        }
+        ::-webkit-input-placeholder{
+            color:#fff;
+            background: #ccc;
+            line-height: 30px;
+        }
+    </style>
+    <input type="text" placeholder="这是一句占位符，虽然并没有什么卵用">
+    <!-- 练习 -->
+    <script>
+        if(Modernizr.borderimage){
+            console.log("这个浏览器支持borderImage")
+        }else{
+            console.log("这个浏览器不支持borderImage")
+        }
+    </script>
+</body>
+
+</html>

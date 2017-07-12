@@ -1,0 +1,58 @@
+@charset "UTF-8";
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 14px;
+  font-family: sans-serif, 'Arial', 'Georgia', 'monospace'; }
+
+body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, dl, dd, dt, form, fieldset, legend, input, textarea, select, button, img, div, span, hr, blockquote {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+img {
+  border: 0;
+  outline-width: 0;
+  vertical-align: top; }
+
+a, a:hover, a:link, a:active, a:focus {
+  color: #333;
+  outline: none;
+  text-decoration: none; }
+
+input, textarea {
+  -webkit-user-select: auto;
+  outline: none; }
+
+ul, li {
+  list-style: none; }
+
+* {
+  /*去除默认样式*/
+  -webkit-tap-highlight-color: transparent;
+  /*取消点击的背影颜色 */
+  -webkit-focus-ring-color: transparent;
+  -webkit-appearance: none;
+  /*长按时不触发系统菜单*/
+  -webkit-touch-callout: none;
+  /*用户不能选择元素间的任何内容*/
+  -webkit-user-select: none;
+  /*取消轮廓*/
+  outline: 0 none;
+  /* 滑动不阻塞 */
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*::before, *::after {
+  display: table;
+  content: ''; }
+
+*::after {
+  clear: both; }

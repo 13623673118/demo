@@ -1,0 +1,32 @@
+#survey {
+    background: url(../img/gaikuang-bj.jpg) no-repeat center center;
+    background-size: 100% auto;
+    overflow: hidden;
+}
+
+.text {
+    width: 100%;
+    padding: 0 .3rem;
+    position: absolute;
+    top:50%;
+    margin-top: -3rem;
+}
+
+.text h1 {
+    font-size: .3rem;
+    text-align: center;
+    line-height: 2.5;
+    color: #ffe696;
+}
+
+#title {
+    margin-top: .1rem;
+    height:4.5rem;
+}
+
+#title div {
+    color: #fff;
+    font-size: .24rem;
+    line-height:1.5;
+    text-align: justify;
+}

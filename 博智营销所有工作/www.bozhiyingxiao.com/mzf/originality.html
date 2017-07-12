@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<script>
+		if((/(android|iphone|ipad|PlayBook|BB10)/i).test(window.navigator.userAgent)){
+            window.location.href = 'http://bozhiyingxiao.com/mzf/phone/index.html';
+            
+        }
+	</script>
+	<title>互联网创意_魔之方科技</title>
+	<meta name="keywords" content="魔之方,产品,动态,团队,联系我们,腾讯QQ智慧校园">
+	<meta name="description" content="西安魔之方网络科技有限公司是一家数字媒体全领域服务及创意整合营销服务提供商，与众多知名企业、院校建立了密切的合作关系。公司专注于腾讯QQ、微信两大生态平台，拥有专业完善的技术研发和运营团队，结合对互联网策略、创意和教育行业发展的深度洞察，为院校提供自媒体平台建设、运营和技术支持，实现校务管理、校园消费、校园大数据和校园社交的信息一体化。">
+	<link rel="stylesheet" href="css/ori.css">
+	<link rel="shortcut icon" href="img/head-logo.jpg">
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+	<!-- 头部  nav   banner-->
+	<div class="header-box">
+		<div class="head">
+			<div class="logo">
+				<a href="javascript:;"><img src="img/logo.png" alt="图片加载失败"></a>
+			</div>
+			<ul class="nav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="goods.html">产品</a></li>
+				<li><a href="state.html">动态</a></li>
+				<li><a href="aboutus.html">团队</a></li>
+				<li class="last"><a href="concat.html">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="banner-box">
+		
+	</div>
+	<!-- 产品服务 -->
+	<div class="product-box">
+		<div class="title">
+			<div class="ch">互联网创意</div>
+			<div class="en">Originality</div>
+		</div>
+		<div class="introduce">西安魔之方网络科技有限公司是一家数字媒体全领域服务及创意整合营销服务提供商 <br>我们拥有专业完善的技术研发和运营团队</div>
+		<ul class="product">
+			<li class="idea">
+				<a href="javascript:;">
+					<p id="idea"></p>
+					<span>企业整合营销推广</span>
+				</a>
+			</li>
+			<li class="plan">
+				<a href="javascript:;">
+					<p id="plan"></p>
+					<span>新媒体托管及广告投放</span>
+				</a>
+			</li>
+			<li class="combine">
+				<a href="javascript:;">
+					<p id="combine"></p>
+					<span>电视媒体资源整合</span>
+				</a>
+			</li>
+			<li class="last tencent">
+				<a href="javascript:;">
+					<p id="tencent"></p>
+					<span>腾讯资源广告投放</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- 合作同盟 -->
+	<a href="javascript:;" class="coop"></a>
+	<div class="footer">
+		<div class="title">数字媒体全领域服务及创意整合营销服务提供商</div>
+		<div class="sub-title">魔之方旗下产品</div>
+		<ul class="logo">
+			<li><a href="javascript:;"><img src="img/qq.png" alt=""></a></li>
+			<li><a href="javascript:;"><img src="img/weibo.png" alt=""></a></li>
+			<li><a href="javascript:;"><img src="img/weixing.png" alt=""></a></li>
+		</ul>
+		<ul class="fade">
+			<li><img src="img/qq.jpg" alt=""></li>
+			<li><img src="img/weibo.jpg" alt=""></li>
+			<li><img src="img/weixing.jpg" alt=""></li>
+		</ul>
+	</div>
+
+	<script>
+		var H = $(window).outerHeight(true);
+		$(window).on('scroll', function () {
+			//导航栏背景颜色
+			if ($('body').scrollTop() > H - 400) {
+				$('.header-box').addClass('hide')
+			} else {
+				$('.header-box').removeClass('hide')
+			}
+		})
+	</script>
+</body>
+</html>

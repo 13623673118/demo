@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>大华公园世家</title>
+    <link href="http://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <link href="http://cdn.bootcss.com/Swiper/3.4.1/css/swiper.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/Swiper/3.4.1/js/swiper.jquery.js"></script>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/type.css">
+</head>
+<body>
+<div class="full" id="type">
+    <div class="mask"></div>
+    <div class="header">
+        <a href="types.html"><img src="img/huxing-icon.png" alt=""/></a>
+        原墅
+    </div>
+    <ul class="lists">
+        <li><a href="#">
+            <img src="img/huxing-icon3.png" alt=""/>
+
+            <h1>锦绣云庭</h1>
+
+            <h2>建筑面积约:345.15m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon4.png" alt=""/>
+
+            <h1>漫香臻邸</h1>
+
+            <h2>建筑面积约:348.21m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon5.png" alt=""/>
+            <h1>林隐院墅</h1>
+            <h2>建筑面积约:353.69m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon6.png" alt=""/>
+            <h1>闲庭香郡</h1>
+            <h2>建筑面积约:356.9m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+    </ul>
+    <div class="swiper-container" id="imgs">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="img/bieshu1.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/bieshu2.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/bieshu3.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/bieshu4.jpg" alt=""/></a></div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var Swiper = new Swiper('#imgs', {
+        direction: 'horizontal',
+        loop: true,
+        speed: 400,
+        watchSlidesProgress:true,
+        watchSlidesVisibility:true
+    });
+
+    var lists = $('.lists li');
+    lists.each(function (i, v) {
+        $(v).delay(i * 200).queue(function () {
+            $(v).addClass('animated bounceInLeft')
+        });
+    });
+
+    $('.lists li').on('click',function(){
+        $('#imgs').addClass('show');
+        Swiper.slideTo($(this).index()+1,0)
+
+    });
+    $('#imgs').on('click',function(){
+        $(this).removeClass('show')
+    })
+</script>
+</body>
+</html>

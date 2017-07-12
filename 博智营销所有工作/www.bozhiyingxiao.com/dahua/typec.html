@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>大华公园世家</title>
+    <link href="http://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <link href="http://cdn.bootcss.com/Swiper/3.4.1/css/swiper.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/Swiper/3.4.1/js/swiper.jquery.js"></script>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/type.css">
+</head>
+<body>
+<div class="full" id="type">
+    <div class="mask"></div>
+    <div class="header">
+        <a href="types.html"><img src="img/huxing-icon.png" alt=""/></a>
+        花园洋房
+    </div>
+    <ul class="lists">
+        <li><a href="#">
+            <img src="img/huxing-icon7.png" alt=""/>
+            <h1>三室两厅二卫</h1>
+            <h2>建筑面积约:110.14m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon8.png" alt=""/>
+            <h1>三室两厅二卫</h1>
+            <h2>建筑面积约:116.82m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon9.png" alt=""/>
+            <h1>三室两厅二卫</h1>
+            <h2>建筑面积约:132.83m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon10.png" alt=""/>
+            <h1>四室两厅二卫</h1>
+            <h2>建筑面积约:181.68m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon11.png" alt=""/>
+            <h1>四室两厅四卫</h1>
+            <h2>建筑面积约:197.1m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+        <li><a href="#">
+            <img src="img/huxing-icon12.png" alt=""/>
+            <h1>四室两厅二卫</h1>
+            <h2>建筑面积约:142.19m²</h2>
+            <img src="img/huxing-icon.png" alt=""/>
+        </a></li>
+    </ul>
+    <div class="swiper-container" id="imgs">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="img/yangfang1.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/yangfang2.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/yangfang3.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/yangfang4.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/yangfang5.jpg" alt=""/></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/yangfang6.jpg" alt=""/></a></div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var Swiper = new Swiper('#imgs', {
+        direction: 'horizontal',
+        loop: true,
+        speed: 400,
+        watchSlidesProgress:true,
+        watchSlidesVisibility:true
+    });
+
+    var lists = $('.lists li');
+    lists.each(function (i, v) {
+        $(v).delay(i * 200).queue(function () {
+            $(v).addClass('animated bounceInLeft')
+        });
+    });
+
+    $('.lists li').on('click',function(){
+        $('#imgs').addClass('show');
+        Swiper.slideTo($(this).index()+1,0)
+
+    });
+    $('#imgs').on('click',function(){
+        $(this).removeClass('show')
+    })
+</script>
+</body>
+</html>

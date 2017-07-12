@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>开始使用Layui</title>
+  <style type="text/css">
+	@keyframes rotate{
+	  	0%{transform: rotate(0deg);}
+	  	100%{transform: rotate(360deg);}
+	}
+  	div{
+  		width:400px;
+  		height:400px;
+  		border-radius: 50%;
+  		position: absolute;
+  		z-index: -1;
+  		top:0;
+  		bottom:0;
+  		right:0;
+  		left:0;
+  		margin:auto;
+  		background: red;
+  		overflow: hidden;
+  		animation: rotate 10s linear infinite both;
+  	}
+  	div img{
+  		width:50px;
+  		height:50px;
+  		filter:sepia(1) grayscale();
+  		position: absolute;
+  		top:60px;
+  		left:60px;
+  		-webkit-clip-path: circle(50% at 50% 50%);
+  		transition:	all .6s ease;
+  		animation: inherit;
+  		animation-direction:reverse;
+  	}
+  	img{
+  		transition: 0.6s;
+	    border: 0;
+	    outline-width: 0;
+	    vertical-align: bottom;
+	    float: left;
+  	}
+  	img.grayscale:hover{
+  		filter:grayscale(100%);
+  	}
+  	img.sepia:hover{
+  		filter:sepia()
+  	}
+  	img.saturate:hover{
+  		filter:saturate(500%)
+  	}
+  	img.hue-rotate:hover{
+  		filter:hue-rotate(90deg)
+  	}
+  	img.invert:hover{
+  		filter:invert(100%)
+  	}
+  	img.opacity:hover{
+  		filter:opacity(50%)
+  	}
+  	img.brightness:hover{
+  		filter:brightness(50%)
+  	}
+  	img.contrast:hover{
+  		filter:contrast(50%)
+  	}
+  	img.blur:hover{
+  		filter:blur(4px)
+  	}
+  	img.drop-shadow:hover{
+  		filter:drop-shadow(4px 4px 4px rgba(0,0,0,1))
+  	}
+  </style>
+</head>
+<body>
+<div><img src="1.jpg"></div>
+<img src="1.jpg">
+<img src="1.jpg">
+<img src="1.jpg">
+<img src="1.jpg">
+<img src="1.jpg">
+<img src="1.jpg">
+<img src="1.jpg">
+<img src="1.jpg">
+<img src="1.jpg">
+<img src="1.jpg">
+<!--
+	filter:	grayscale('只有黑白俩种颜色的灰度')		0%-100%		默认是100%
+			sepia('降低饱和度到橙黄色，几乎所有色相值都集中在35-40之间')		0%-100%		默认是100%
+			saturate('饱和度')		0-infinite		默认100%
+			hue-rotate(色相旋转)		0-360deg	默认0deg
+			invert(反色)			0%-100%		默认100%
+			opacity(透明度) 		0%-100%    默认100%
+			brightness(亮度) 	0%-100%    默认100%
+			contrast(对比度) 	0-infinite		默认100%
+			blur(模糊) 			0-infinite      默认0
+			drop-shadow(阴影)	写法和box-shadow一样
+			交叉使用时用空格隔开
+-->
+<script type="text/javascript">
+	var arr=['grayscale','sepia','saturate','hue-rotate','invert','opacity','brightness','contrast','blur','drop-shadow'];
+	var imgs=document.getElementsByTagName('img');
+	for (var i = 0; i < imgs.length; i++) {
+		imgs[i+1].setAttribute('class',arr[i])
+	}
+</script>
+</body>
+</html>

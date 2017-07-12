@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>科大绿建</title>
+    <link rel="stylesheet" href="css/goods.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/goods.js"></script>
+</head>
+<body>
+	<div class="nav">
+	    <div class="logo"><a href="index.html#four"></a></div>
+	    <div class="title">产品<img src="img/open.png" alt=""></div>
+	    <ul class="list">
+			<li><a href="chuquan-goods.html">产品</a></li>
+			<li><a href="chuquan-anli.html">案例</a></li>
+			<li><a href="chuquan-news.html">新闻活动</a></li>
+			<li><a href="chuquan-introduce.html">公司介绍</a></li>
+	    </ul>
+	</div>
+	<div class="section">
+		<div class="mask"></div>
+        <img src="img/yindao-bj.jpg" class="bg" alt="">
+        <div class="swiper-container" id="host-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/chanpin-banner1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/chanpin-banner2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/chanpin-banner3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/chanpin-banner4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/chanpin-banner5.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination" id='host-banner-list'></div>
+        </div>
+        <div class="guide">使用视频</div>
+        <div class="video-bg"></div>
+    </div>
+
+
+
+    <script src="js/swiper.js"></script>
+	<script>
+	    var hostBanner = new Swiper('#host-banner', {
+	        direction: 'horizontal',
+	        loop: true,
+	        pagination: '.swiper-pagination',
+	        autoplayDisableOnInteraction:false,
+	        autoplay: 2000,
+	        speed: 800
+	    })
+	</script>
+</body>
+</html>

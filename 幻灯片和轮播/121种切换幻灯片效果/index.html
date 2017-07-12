@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #wrap {
+            position: absolute;
+            width: 320px;
+            height: 568px;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            margin:auto;
+            overflow: hidden;
+        }
+        #imgs {
+            position: absolute;
+            width: 320px;
+            height: 568px;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            margin:auto;
+            overflow: hidden;
+            z-index: 1;
+            background: url(images/loading.gif) no-repeat center center;
+        }
+
+        #imgs.visible {
+            overflow: visible;
+        }
+
+        #imgs div {
+            overflow: hidden;
+        }
+
+        #imgs img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        #tssel {
+            position: absolute;
+            top:0;
+            left: 50%;
+            z-index: 10;
+            width: 160px;
+            margin-left: -80px;
+        }
+
+        #navs {
+            z-index: 10;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            margin:0 5px;
+            width:100%;
+            height:10px;
+            bottom:10px;
+        }
+
+        #navs a {
+            overflow: hidden;
+            display: block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            margin:0  4px;
+            transition: all 0.6s ease;
+        }
+
+        #navs .active {
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="imgs">
+            <div><img src="images/1.jpg" /></div>
+            <div><img src="images/2.jpg" /></div>
+            <div><img src="images/3.jpg" /></div>
+            <div><img src="images/4.jpg" /></div>
+            <div><img src="images/5.jpg" /></div>
+            <div><img src="images/6.jpg" /></div>
+            <div><img src="images/7.jpg" /></div>
+            <div><img src="images/8.jpg" /></div>
+        </div>
+        <div id="navs">
+            <a href="javascript:;" class="active"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+        <select id="tssel">
+	        <option value="">选择切页效果</option>
+	        <option value="fade">fade</option>
+	        <optgroup label="滚动效果">
+	            <option value="scroll">scroll</option>
+	            <option value="scroll3d">scroll3d</option>
+	            <option value="scrollCover">scrollCover</option>
+	            <option value="scrollCoverReverse">scrollCoverReverse</option>
+	            <option value="scrollCoverIn">scrollCoverIn</option>
+	            <option value="scrollCoverOut">scrollCoverOut</option>
+	            <option value="scrollX">scrollX</option>
+	            <option value="scroll3dX">scroll3dX</option>
+	            <option value="scrollCoverX">scrollCoverX</option>
+	            <option value="scrollCoverReverseX">scrollCoverReverseX</option>
+	            <option value="scrollCoverInX">scrollCoverInX</option>
+	            <option value="scrollCoverOutX">scrollCoverOutX</option>
+	            <option value="scrollY">scrollY</option>
+	            <option value="scroll3dY">scroll3dY</option>
+	            <option value="scrollCoverY">scrollCoverY</option>
+	            <option value="scrollCoverReverseY">scrollCoverReverseY</option>
+	            <option value="scrollCoverInY">scrollCoverInY</option>
+	            <option value="scrollCoverOutY">scrollCoverOutY</option>
+	        </optgroup>
+	        <optgroup label="滑动效果">
+	            <option value="slide">slide</option>
+	            <option value="slideCover">slideCover</option>
+	            <option value="slideCoverReverse">slideCoverReverse</option>
+	            <option value="slideCoverIn">slideCoverIn</option>
+	            <option value="slideCoverOut">slideCoverOut</option>
+	            <option value="slideX">slideX</option>
+	            <option value="slideCoverX">slideCoverX</option>
+	            <option value="slideCoverReverseX">slideCoverReverseX</option>
+	            <option value="slideCoverInX">slideCoverInX</option>
+	            <option value="slideCoverOutX">slideCoverOutX</option>
+	            <option value="slideY">slideY</option>
+	            <option value="slideCoverY">slideCoverY</option>
+	            <option value="slideCoverReverseY">slideCoverReverseY</option>
+	            <option value="slideCoverInY">slideCoverInY</option>
+	            <option value="slideCoverOutY">slideCoverOutY</option>
+	        </optgroup>
+			<optgroup label="封面效果">
+				<option value="flow">flow</option>
+				<option value="flowCover">flowCover</option>
+				<option value="flowCoverReverse">flowCoverReverse</option>
+				<option value="flowCoverIn">flowCoverIn</option>
+				<option value="flowCoverOut">flowCoverOut</option>
+				<option value="flowX">flowX</option>
+				<option value="flowCoverX">flowCoverX</option>
+				<option value="flowCoverReverseX">flowCoverReverseX</option>
+				<option value="flowCoverInX">flowCoverInX</option>
+				<option value="flowCoverOutX">flowCoverOutX</option>
+				<option value="flowY">flowY</option>
+				<option value="flowCoverY">flowCoverY</option>
+				<option value="flowCoverReverseY">flowCoverReverseY</option>
+				<option value="flowCoverInY">flowCoverInY</option>
+				<option value="flowCoverOutY">flowCoverOutY</option>
+			</optgroup>
+			<optgroup label="裁切效果">
+	            <option value="slice">slice</option>
+	            <option value="sliceX">sliceX</option>
+	            <option value="sliceY">sliceY</option>
+	        </optgroup>
+	        <optgroup label="缩放效果">
+	            <option value="zoom">zoom</option>
+	            <option value="zoomCover">zoomCover</option>
+	            <option value="zoomCoverReverse">zoomCoverReverse</option>
+	            <option value="zoomCoverIn">zoomCoverIn</option>
+	            <option value="zoomCoverOut">zoomCoverOut</option>
+	            <option value="zoomX">zoomX</option>
+	            <option value="zoomCoverX">zoomCoverX</option>
+	            <option value="zoomCoverReverseX">zoomCoverReverseX</option>
+	            <option value="zoomCoverInX">zoomCoverInX</option>
+	            <option value="zoomCoverOutX">zoomCoverOutX</option>
+	            <option value="zoomY">zoomY</option>
+	            <option value="zoomCoverY">zoomCoverY</option>
+	            <option value="zoomCoverReverseY">zoomCoverReverseY</option>
+	            <option value="zoomCoverInY">zoomCoverInY</option>
+	            <option value="zoomCoverOutY">zoomCoverOutY</option>
+	        </optgroup>
+	        <optgroup label="扭曲效果">
+	            <option value="skew">skew</option>
+	            <option value="skewCover">skewCover</option>
+	            <option value="skewCoverReverse">skewCoverReverse</option>
+	            <option value="skewCoverIn">skewCoverIn</option>
+	            <option value="skewCoverOut">skewCoverOut</option>
+	            <option value="skew">skewX</option>
+	            <option value="skewCoverX">skewCoverX</option>
+	            <option value="skewCoverReverseX">skewCoverReverseX</option>
+	            <option value="skewCoverInX">skewCoverInX</option>
+	            <option value="skewCoverOutX">skewCoverOutX</option>
+	            <option value="skewY">skewY</option>
+	            <option value="skewCoverY">skewCoverY</option>
+	            <option value="skewCoverReverseY">skewCoverReverseY</option>
+	            <option value="skewCoverInY">skewCoverInY</option>
+	            <option value="skewCoverOutY">skewCoverOutY</option>
+	        </optgroup>
+	        <optgroup label="翻转效果">
+	            <option value="flip">flip</option>
+	            <option value="flip3d">flip3d</option>
+	            <option value="flipClock">flipClock</option>
+	            <option value="flipPaper">flipPaper</option>
+	            <option value="flipCover">flipCover</option>
+	            <option value="flipCoverReverse">flipCoverReverse</option>
+	            <option value="flipCoverIn">flipCoverIn</option>
+	            <option value="flipCoverOut">flipCoverOut</option>
+	            <option value="flipX">flipX</option>
+	            <option value="flip3dX">flip3dX</option>
+	            <option value="flipClockX">flipClockX</option>
+	            <option value="flipPaperX">flipPaperX</option>
+	            <option value="flipCoverX">flipCoverX</option>
+	            <option value="flipCoverReverseX">flipCoverReverseX</option>
+	            <option value="flipCoverInX">flipCoverInX</option>
+	            <option value="flipCoverOutX">flipCoverOutX</option>
+	            <option value="flipY">flipY</option>
+	            <option value="flip3dY">flip3dY</option>
+	            <option value="flipClockY">flipClockY</option>
+	            <option value="flipPaperY">flipPaperY</option>
+	            <option value="flipCoverY">flipCoverY</option>
+	            <option value="flipCoverReverseY">flipCoverReverseY</option>
+	            <option value="flipCoverInY">flipCoverInY</option>
+	            <option value="flipCoverOutY">flipCoverOutY</option>
+	        </optgroup>
+	        <optgroup label="爆炸效果">
+	            <option value="bomb">bomb</option>
+	            <option value="bombCover">bombCover</option>
+	            <option value="bombCoverReverse">bombCoverReverse</option>
+	            <option value="bombCoverIn">bombCoverIn</option>
+	            <option value="bombCoverOut">bombCoverOut</option>
+	            <option value="bombX">bombX</option>
+	            <option value="bombCoverX">bombCoverX</option>
+	            <option value="bombCoverReverseX">bombCoverReverseX</option>
+	            <option value="bombCoverInX">bombCoverInX</option>
+	            <option value="bombCoverOutX">bombCoverOutX</option>
+	            <option value="bombY">bombY</option>
+	            <option value="bombCoverY">bombCoverY</option>
+	            <option value="bombCoverReverseY">bombCoverReverseY</option>
+	            <option value="bombCoverInY">bombCoverInY</option>
+	            <option value="bombCoverOutY">bombCoverOutY</option>
+	        </optgroup>
+	    </select>
+    </div>
+
+    <script type="text/javascript" src="js/pageSwitch.js"></script>
+    <script>
+        var reg = location.search.match(/ts=([^&]*)/),
+            ts = reg && reg[1] || 'flipClock',
+            a = new pageSwitch('imgs', {
+                //页面过渡的时间
+                duration: 1000,
+                // 默认显示第几张
+                start: 0,
+                // 页面切换的方向 0横向 1竖向
+                direction: 1,
+                // 是否循环切换
+                loop: true,
+                // 过渡时的动画效果 ease bounce ease-in ease-out linear
+                ease: /flip(?!Paper)/.test(ts) ? 'bounce' : 'ease',
+                // 运动方式
+                transition: ts,
+                // 是否可以使用拖拽控制
+                mouse: true,
+                // 是否可以鼠标滚轮控制
+                mousewheel: true,
+                // 是否可以使用键盘控制
+                arrowkey: true,
+                // 是否自动播放
+                autoplay:true,
+                // 自动播放时的时间间隔
+                interval:1000
+            }),
+            navs = document.getElementById('navs').getElementsByTagName('a');
+
+/*
+方法
+    a.prev():  上一张;
+    a.next():  下一张;
+    a.slide(index):  第几张;
+    a.setEase('Name'):  重新设定ease;
+    a.setTransition('Name'):  重新设定transition;
+    a.freeze():  冻结页面转换,冻结后不会响应用户操作(可以通过调用prev next slide进行);
+    a.play():  播放;
+    a.pause():  暂停;
+    a.prepend(node);  前增页面
+    a.append(node);  后增页面
+    a.insertBefore(node,index);  在第index张前添加
+    a.insertAfter(node,index);  在第index张后添加
+    a.remove(index);  删除第index张页面
+    a.isStatic();  是否静止状态
+
+事件绑定
+    a.on(event,callback)
+    event的值有
+        before:页面切换前;
+        after:页面切换后;
+        update:页面切换中;
+        dragStart:开始拖拽;
+        dragMove:拖拽中;
+        dragEnd:拖拽结束;
+*/
+
+
+        a.on('before', function(m, n) {
+            navs[m].className = '';
+            navs[n].className = 'active';
+        });
+
+        if (/^(?:scroll3d|flip)/.test(ts)) {
+            document.getElementById('imgs').className = 'visible';
+        }
+
+        document.getElementById('tssel').onchange = function() {
+            location.href = '?ts=' + this.value;
+        }
+        var options = document.getElementById('tssel').options,
+            i = 0,
+            op;
+        while (op = options[i++]) {
+            if (op.value === ts) {
+                op.selected = true;
+                break;
+            }
+        }
+        i = 0;
+        for (; i < navs.length; i++) {
+            ! function(i) {
+                navs[i].onclick = function() {
+                    a.slide(i);
+                }
+            }(i);
+        }
+    </script>
+</body>
+
+</html>

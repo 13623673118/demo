@@ -1,0 +1,55 @@
+<head>
+<meta charset="utf-8">
+<title>预加载进度条</title>
+<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script src="preload.js"></script>
+</head>
+<style>
+    img{
+        max-width:100%;
+        max-height:100%;
+    }
+</style>
+<body>
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495501513&di=9b144f12b1a214f6ca7011b36a809940&imgtype=jpg&er=1&src=http%3A%2F%2Fphoto.enterdesk.com%2F2008-5-27%2F200805271350164668.jpg">
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494906793096&di=eedf9a798aac942b56296077526dbbbe&imgtype=0&src=http%3A%2F%2Fphoto.enterdesk.com%2F2010-10-23%2Fenterdesk.com-2C7E763EE8AB62B4310F056E629A9B9F.jpg">
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494906793095&di=945137d72f574c60e76d8639879e4740&imgtype=0&src=http%3A%2F%2Fphoto.enterdesk.com%2F2009-8-29%2Fenterdesk.com-0194F0EBF0C2B49BDA5D600205B63DAC.jpg">
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494906793094&di=decb9e833e78ff4ed60840983fce1d0b&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fpic%2Fitem%2Ff11fa4315c6034a84cfb860bcb134954082376dc.jpg">
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494906793094&di=09e43f071ff301f3764a381063c2a3e0&imgtype=0&src=http%3A%2F%2Fphoto.enterdesk.com%2F2008-10-12%2F200810121732291558.jpg">
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494906793092&di=9865705ae17d49bc916253e86ea11787&imgtype=0&src=http%3A%2F%2Fphoto.enterdesk.com%2F2010-10-23%2Fenterdesk.com-DA8E1B8FE1A2C30138BB410775532682.jpg">
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494906793091&di=38d22d95a24102ac610b5545bb5bcde8&imgtype=0&src=http%3A%2F%2Fphoto.enterdesk.com%2F2009-6-8%2Fenterdesk.com-AD420911198843A0385C4914DB3DD4DF.jpg">
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494906793090&di=f973c32991bf977e82f26d7915d11768&imgtype=0&src=http%3A%2F%2Fimg2.mtime.cn%2Fup%2F1666%2F969666%2FC2D73919-B247-4AFF-8D02-63C6F0DD68B4_o.jpg">
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494906793087&di=72244d8f05d1b2e4216593d982dbd3b3&imgtype=0&src=http%3A%2F%2Fbizhi.zhuoku.com%2Fbizhi2008%2F0609%2Fguowai%2FKuanping31.jpg">
+
+<script type="text/javascript">
+$.preLoad.PageLoading({
+    sleep: 50
+});
+
+
+
+var a={};
+// 传入的参数
+//     第一个参数:目标对象;
+//     第二个参数:需要添加的属性的名字;
+//     第三个参数:目标属性拥有的特性,有以下取值
+//         value:添加的属性的值;
+//         writable:如果设置为false,属性的值就不能被重写,变成了只读;
+//          configurable:总开关,设置为false以后就不能再设置它的value、writable、configurable；
+//           enumerable：是否能在for..in..循环中遍历出来或在object.keys中列举出来；
+//         get:取对象中对应属性的值;
+//         set:设置对象中对应属性的值;
+//         如果想用get和set,就不能同时使用writable或value中的任何一个
+Object.defineProperty(a,"b",{
+    // value:'123'
+    set:function(value){
+        console.log("shezhidezhiwei"+value)
+    },
+    get:function(value){
+        console.log(value)
+    }
+})
+a.b=1;
+// console.log(a.b)
+</script>
+</body>

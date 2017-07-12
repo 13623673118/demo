@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/show/show"
+  ],
+  "window": {
+    "navigationBarTitleText": "组件",
+    "backgroundColor": "#000000",
+    "backgroundTextStyle": "light"
+  },
+  "networkTimeout": {
+    "request": 10000
+  }
+}

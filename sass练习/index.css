@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/*循环*/
+.banner-1 {
+  background: #aaccee; }
+
+.banner-2 {
+  background: #556677; }
+
+.banner-3 {
+  background: #39444f; }
+
+.banner-4 {
+  background: #2b333c; }
+
+.a {
+  color: red; }
+
+.b {
+  color: red; }
+
+.c {
+  color: red; }
+
+.d {
+  color: red; }
+
+/*判断*/
+.if {
+  background: red; }
+
+/*函数*/
+.double {
+  width: 20px;
+  height: 40px; }
+
+/*each循环*/
+@media (max-width: 100px) {
+  html {
+    font-size: 1px; } }
+
+@media (max-width: 200px) {
+  html {
+    font-size: 2px; } }
+
+@media (max-width: 300px) {
+  html {
+    font-size: 3px; } }
+
+@media (max-width: 400px) {
+  html {
+    font-size: 4px; } }
+
+@media (max-width: 500px) {
+  html {
+    font-size: 5px; } }
+
+.flex {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background: #ace; }
+  .flex div {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .flex .con-1 {
+    width: 200px;
+    height: 200px;
+    background: #aaccee; }
+  .flex .con-2 {
+    width: 150px;
+    height: 150px;
+    background: #556677; }
+  .flex .con-3 {
+    width: 100px;
+    height: 100px;
+    background: #39444f; }

@@ -1,0 +1,57 @@
+ul a {
+    font-size: 16px;
+    display: block;
+    padding: 10px 20px;
+    color: #aaa;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset;
+}
+
+ul a:hover,
+ul a:focus,
+ul a:active {
+    color: #fff;
+}
+
+ul ul a {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+ul ul a:hover,
+ul ul a:focus,
+ul ul a:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#menu {
+    width: 200px;
+    background: #3d4444;
+    color: #fff;
+}
+
+ul i{
+    text-align: center;
+    float: right;
+    line-height: 20px !important;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -ms-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+}
+li.active >a i{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+ul ul a {
+    padding: 10px 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+ul ul ul a {
+    padding: 10px 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+}

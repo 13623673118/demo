@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body,ul,li{
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+	body{
+		overflow-x: hidden;
+	}
+	.box{
+		height: auto;
+		transform-style: preserve-3d;
+		transform:  rotateY(30deg) rotateX(60deg) translateX(-8%) ;
+	}
+	.box ul{
+		width: 1080px;
+		position: relative;
+		top: 0;
+	}
+	.box li{
+		width: 330px;
+		margin: 15px;
+		height: 230px;
+		position: relative;
+		float: left;
+		transition: all 0.3s ease-out;
+	}
+	.box li img,.box li div{
+		position: absolute;
+		width: 330px;
+		height: 230px;
+		left: 0;
+		top: 0;
+		transition: 0.3s;
+		z-index: 4;
+	}
+	.box li div:nth-of-type(1){
+		background: #ac5cf5;
+		opacity: 0.5;
+		z-index: 3;
+	}
+	.box li div:nth-of-type(2){
+		background: #5db4eb;
+		opacity: 0.5;
+		z-index: 2;
+	}
+	.box li div:nth-of-type(3){
+		background: #5debb4;
+		opacity: 0.5;
+		z-index: 1;
+	}
+	.box li:hover{
+		box-shadow: 0 0 50px #fff;
+		z-index: 999;
+
+	}
+	.box li:hover img:nth-of-type(1){
+		transform: translateZ(100px);
+	}
+	.box li:hover div:nth-of-type(1){
+		transform: translateZ(75px);
+	}
+	.box li:hover div:nth-of-type(2){
+		transform: translateZ(50px);
+	}
+	.box li:hover div:nth-of-type(3){
+		transform: translateZ(25px);
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li>
+				<img src="1.jpg"/>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+			<li>
+				<img src="1.jpg"/>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+			<li>
+				<img src="1.jpg"/>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+			<li>
+				<img src="1.jpg"/>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+			<li>
+				<img src="1.jpg"/>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+			<li>
+				<img src="1.jpg"/>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+			<li>
+				<img src="1.jpg"/>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+			<li>
+				<img src="1.jpg"/>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+			<li>
+				<img src="1.jpg"/>
+				<div></div>
+				<div></div>
+				<div></div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

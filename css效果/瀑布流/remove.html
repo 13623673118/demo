@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://jq22.qiniudn.com/masonry-docs.min.js"></script>
+	<style>
+		* { 
+			box-sizing: border-box;
+		}
+		.grid {
+		  max-width: 1200px;
+		  margin: 0 auto;
+		}
+
+		.grid::after {
+		  	content: '';
+		  	display: block;
+		  	clear: both;
+		}
+
+		.grid-item {
+		  	width: 160px;
+		  	height: auto;
+		  	float: left;
+		  	border-radius: 15px;
+		 	margin-bottom: 5px;
+		 	overflow: hidden;
+		}
+		.grid-item img{
+			width:100%;
+			outline-width:0px;  
+  			vertical-align:top;
+		}
+		.grid-item:hover {
+		  cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center;">点击图片删除</h1>
+	<div class="grid">
+  		<div class="grid-item"><img src="img/1.png" alt=""></div>
+  		<div class="grid-item"><img src="img/2.png" alt=""></div>
+  		<div class="grid-item"><img src="img/3.png" alt=""></div>
+  		<div class="grid-item"><img src="img/5.png" alt=""></div>
+  		<div class="grid-item"><img src="img/6.png" alt=""></div>
+  		<div class="grid-item"><img src="img/1.png" alt=""></div>
+  		<div class="grid-item"><img src="img/7.png" alt=""></div>
+  		<div class="grid-item"><img src="img/2.png" alt=""></div>
+  		<div class="grid-item"><img src="img/5.png" alt=""></div>
+  		<div class="grid-item"><img src="img/2.png" alt=""></div>
+  		<div class="grid-item"><img src="img/2.png" alt=""></div>
+  		<div class="grid-item"><img src="img/3.png" alt=""></div>
+  		<div class="grid-item"><img src="img/5.png" alt=""></div>
+  		<div class="grid-item"><img src="img/6.png" alt=""></div>
+  		<div class="grid-item"><img src="img/1.png" alt=""></div>
+  		<div class="grid-item"><img src="img/6.png" alt=""></div>
+  		<div class="grid-item"><img src="img/2.png" alt=""></div>
+  		<div class="grid-item"><img src="img/6.png" alt=""></div>
+  		<div class="grid-item"><img src="img/1.png" alt=""></div>
+  		<div class="grid-item"><img src="img/1.png" alt=""></div>
+  		<div class="grid-item"><img src="img/5.png" alt=""></div>
+  		<div class="grid-item"><img src="img/6.png" alt=""></div>
+	</div>
+	<script>
+		var $grid = $('.grid').masonry({
+			gutter: 5,
+		  	itemSelector: '.grid-item'
+		});
+		$grid.on( 'click', '.grid-item', function() {
+		  	$grid.masonry( 'remove', this ).masonry('layout');
+		});
+	</script>
+</body>
+</html>

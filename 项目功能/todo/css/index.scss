@@ -1,0 +1,393 @@
+@mixin useRem($design-size){
+  $design-size-list:320px,360px,375px,380px,384px,412px,414px,$design-size;
+  @each $size in $design-size-list{
+    @media screen and (min-width: #{$size}){
+      html{
+        font-size: 100px*$size/$design-size;
+      }
+    }
+  }
+}
+@include useRem(750px)
+*{
+  margin:0;
+  padding:0;
+}
+ul,li{
+  list-style: none;
+}
+body{
+  font-size: 16px;
+  font-family: "苹方",sans-serif;
+}
+@font-face {
+  font-family: "iconfont";
+  src: url(../font/iconfont.woff);
+}
+@font-face {
+  font-family: "iconfontbi";
+  src: url(../font/iconfontbi.woff);
+}
+.iconfont {
+  font-family:"iconfont" !important;
+}
+.iconfontbi {
+  font-family:"iconfontbi" !important;
+}
+.icon-passthrough:before { content: "\e656"; }
+.icon-xuanze:before { content: "\e63d"; }
+.icon-duihao:before { content: "\e70b"; }
+.icon-shanchu:before { content: "\e672"; }
+.icon-xingbiao:before { content: "\f0037"; }
+.icon-xingbiaoqian:before { content: "\e70a"; }
+.icon-weixuanzhong:before { content: "\e6c1"; }
+.icon-xuanzhong:before { content: "\e67f"; }
+.icon-paixu:before { content: "\e851"; }
+.icon-rili:before { content: "\e702"; }
+.icon-arrow-left:before { content: "\e64c"; }
+.icon-jiahao:before { content: "\e615"; }
+.icon-fenxiang:before { content: "\e618"; }
+.icon-bi:before { content: "\e607"; }
+.bg{
+  background: url(../image/bg.jpg);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  background-size: 100%;
+}
+.top{
+  width: 100%;
+  height: 1.6rem;
+  background: #668964;
+  position: relative;
+  .menu{
+    display: block;
+    font-size: 0.34rem;
+    color: #fff;
+    line-height: 1.6rem;
+    position: absolute;
+    left: 0;
+    text-align: left;
+    padding-left:0.23rem;
+  }
+  .classify{
+    display: block;
+    font-size: 0.38rem;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    line-height: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+  }
+  .edit{
+    display: block;
+    font-size: 0.34rem;
+    color: #fff;
+    line-height: 1.6rem;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    padding-right:0.23rem;
+  }
+}
+//content
+.add{
+  width: 7.18rem;
+  height: 1rem;
+  background: rgba(102,137,100,0.7);
+  margin: 0.16rem;
+  border-radius: 0.1rem;
+  font-size: 0.36rem;
+  color: #fff;
+  span{
+    line-height: 1rem;
+  }
+  input{
+    width: 5.44rem;
+    height: 100%;
+    border: 0;
+    background: none;
+    outline: none;
+    font-size: 0.36rem;
+    color: #fff;
+  }
+  .icon-jiahao{
+    margin-left: 0.33rem;
+  }
+  .icon-xingbiao{
+    float: right;
+    margin-right: 0.33rem;
+  }
+}
+.list{
+  width: 100%;
+  height: auto;
+  //overflow-y: auto;
+  li{
+    width: 7.18rem;
+    height: 1rem;
+    background: #fafafa;
+    border-radius: 0.1rem;
+    margin:0 0.16rem 0.02rem 0.16rem;
+    font-size: 0.36rem;
+    span{
+      line-height: 1rem;
+    }
+    .thing{
+      margin-left: 0.33rem;
+      color: #262626;
+    }
+    .icon-weixuanzhong{
+      margin-left: 0.33rem;
+      color: #8a8a8a;
+    }
+    .icon-xuanzhong{
+      margin-left: 0.33rem;
+      color: #8a8a8a;
+    }
+    .icon-xingbiao{
+      float: right;
+      margin-right: 0.33rem;
+      color: #8a8a8a;
+    }
+    .panAndDel{
+      width: 2rem;
+      height: 0.88rem;
+      position: absolute;
+      right:-2rem;
+      margin-top: 0.06rem;
+      border-radius: 0.1rem;
+      opacity: 0;
+      .icon-bi{
+        width: 50%;
+        height: 100%;
+        background: #328ad6;
+        color: #fff;
+        font-size: 0.42rem;
+        text-align: center;
+        line-height: 0.88rem;
+        float: left;
+        border-radius: 0.1rem;
+      }
+      .icon-shanchu{
+        width: 50%;
+        height: 100%;
+        background: #db4c3f;
+        color: #fff;
+        font-size: 0.42rem;
+        text-align: center;
+        line-height: 0.88rem;
+        float: left;
+        border-radius: 0.1rem;
+      }
+    }
+  }
+}
+#btn-choose{
+  width: 2.1rem;
+  height:0.58rem;
+  background: rgba(102,137,100,0.7);
+  border-radius: 0.1rem;
+  font-size: 0.2rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.58rem;
+  display: none;
+  margin: 0.34rem 2.7rem;
+}
+//.btn-yc{
+//  width: 2.1rem;
+//  height:0.58rem;
+//  background: rgba(102,137,100,0.7);
+//  border-radius: 0.1rem;
+//  font-size: 0.2rem;
+//  color: #fff;
+//  text-align: center;
+//  line-height: 0.58rem;
+//  display: none;
+//  margin: 0.34rem 2.7rem;
+//}
+//.btn-xs{
+//  width: 2.1rem;
+//  height:0.58rem;
+//  background: rgba(102,137,100,0.7);
+//  border-radius: 0.1rem;
+//  font-size: 0.2rem;
+//  color: #fff;
+//  text-align: center;
+//  line-height: 0.58rem;
+//  display: none;
+//  margin: 0.34rem 2.7rem;
+//}
+.del-list{
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  li{
+    width: 7.18rem;
+    height: 1rem;
+    background: rgba(255,255,255,0.7);
+    border-radius: 0.1rem;
+    margin:0 0.16rem 0.02rem 0.16rem;
+    font-size: 0.36rem;
+    span{
+      line-height: 1rem;
+    }
+    .thing{
+      margin-left: 0.33rem;
+      color: #797977;
+    }
+    .icon-xuanzhong{
+      margin-left: 0.33rem;
+      color: #b5b5b3;
+    }
+    .icon-xingbiao{
+      float: right;
+      margin-right: 0.33rem;
+      color: #b5b5b3;
+    }
+    .icon-shanchu{
+      width: 1rem;
+      height: 0.88rem;
+      background: #db4c3f;
+      color: #fff;
+      font-size: 0.42rem;
+      text-align: center;
+      line-height: 0.88rem;
+      float: left;
+      position: absolute;
+      right:-1rem;
+      margin-top: 0.06rem;
+      border-radius: 0.1rem;
+      //opacity: 0;
+    }
+  }
+}
+//bottom
+.bottom{
+  width: 100%;
+  height: 1rem;
+  background: #668964;
+  position: absolute;
+  bottom: 0;
+  .share{
+    width: 33.33%;
+    height: 1rem;
+    color: #fff;
+    float: left;
+    .icon-fenxiang{
+      font-size: 0.36rem;
+      margin-top: 0.18rem;
+      text-align: center;
+    }
+    .text{
+      font-size: 0.2rem;
+      line-height: 0.4rem;
+      text-align: center;
+    }
+  }
+  .paixu{
+    width: 33.33%;
+    height: 1rem;
+    color: #fff;
+   float: left;
+    .icon-paixu{
+      font-size: 0.36rem;
+      margin-top: 0.18rem;
+      text-align: center;
+    }
+    .text{
+      font-size: 0.2rem;
+      line-height: 0.4rem;
+      text-align: center;
+    }
+  }
+  .date{
+    width: 33.33%;
+    height: 1rem;
+    color: #fff;
+    float: left;
+    .icon-rili{
+      font-size: 0.36rem;
+      margin-top: 0.18rem;
+      text-align: center;
+    }
+    .text{
+      font-size: 0.2rem;
+      line-height: 0.4rem;
+      text-align: center;
+    }
+  }
+}
+//点击修改页面
+.xiugai{
+  background: url(../image/bg.jpg);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  background-size: 100%;
+  z-index: 20;
+  display: none;
+  .title{
+    width: 100%;
+    height: 1.2rem;
+    background: #668964;
+    color: #fff;
+    .icon-arrow-left{
+      display: block;
+      width: 0.18rem;
+      height: 1.2rem;
+      margin: 0 0.43rem;
+      font-size: 0.34rem;
+      line-height: 1.2rem;
+      text-align: center;
+      //color: #8a8a8a;
+      float: left;
+    }
+    .do-title{
+      display: block;
+      font-size: 0.28rem;
+      //color: #262626;
+      width: 1rem;
+      height: 1.2rem;
+      line-height: 1.2rem;
+      text-align: center;
+      font-weight: bold;
+      float: left;
+    }
+    .icon-xingbiao{
+      display: block;
+      font-size: 0.34rem;
+      //color: #8a8a8a;
+      float: right;
+      margin: 0 0.43rem;
+      width: 0.4rem;
+      height: 1.2rem;
+      line-height: 1.2rem;
+      text-align: center;
+    }
+  }
+  .do-neirong{
+    width: 100%;
+    height: 12.4rem;
+    textarea{
+      width: 100%;
+      height: 12.1rem;
+      outline: none;
+      font-size: 0.34rem;
+      background: none;
+    }
+  }
+}

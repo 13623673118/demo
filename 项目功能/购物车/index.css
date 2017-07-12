@@ -1,0 +1,16 @@
+.thumbnail h3{
+	text-align: center
+}
+.thumbnail p{
+	text-align: center
+}
+.ng-scope img{
+	max-width: 100%;
+}
+.ng-scope td{
+	line-height: 100%
+}
+.dropdown-menu{
+	width:500px !important;
+
+}

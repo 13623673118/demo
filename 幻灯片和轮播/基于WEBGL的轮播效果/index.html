@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于WebGL的幻灯片</title>
+    <script src="js/GLSlideshow.js"></script>
+    <script>
+        window.onload = function () {
+            var width, height;
+            if (document.documentElement.clientHeight > document.documentElement.clientWidth) {
+                width = document.documentElement.clientWidth;
+                height = 1200 * width / 1920;
+            } else {
+                height = document.documentElement.clientHeight;
+                width = 1920 * height / 1200;
+            }
+            var slideShow = GLSlideshow.autoDetectRenderer(
+                    ['images/1.jpg', 'images/2.jpg', 'images/3.jpg', 'images/4.jpg'],
+                    {
+                        width: width,
+                        height: height,
+                        duration: 1000,
+                        interval: 2000,
+                        // effect: crossFade  crossZoom  cube  wind  ripple  pageCurl
+                        effect: 'ripple'
+                    }
+            );
+            document.getElementById('container').appendChild(slideShow.domElement);
+
+            // event
+            document.getElementById('pause').onclick=function(){
+                slideShow.pause()
+            };
+            document.getElementById('play').onclick=function(){
+                slideShow.play()
+            };
+            document.getElementById('crrent').onclick=function(){
+                alert(slideShow.getCurrent())
+            };
+            document.getElementById('prev').onclick=function(){
+                alert(slideShow.getPrev())
+            };
+            document.getElementById('crrent').onclick=function(){
+                alert(slideShow.getNext())
+            };
+            document.getElementById('changeSize').onclick=function(){
+                slideShow.setSize(600,400)
+            };
+            document.getElementById('insert').onclick=function(){
+                slideShow.insert('img/1.jpg',3)
+            };
+            document.getElementById('remove').onclick=function(){
+                slideShow.remove(0)
+            };
+            document.getElementById('transition').onclick=function(){
+                slideShow.transition(1)
+            };
+            document.getElementById('interval').onclick=function(){
+                slideShow.interval(1)
+            };
+            document.getElementById('interval').onclick=function(){
+                slideShow.interval(1)
+            };
+            document.getElementById('setEffect').onclick=function(){
+                slideShow.setEffect('wind')
+            };
+            document.getElementById('dispose').onclick=function(){
+                slideShow.dispose()
+            };
+        }
+    </script>
+</head>
+<body>
+<div id="container"
+     style=" position: absolute;left:0;right:0;top:0;bottom:0;display: flex;justify-content: center;"></div>
+<div id="control" style="width:100%;height:30px;display: flex;position:fixed;bottom:0;left:0;z-index: 99;">
+    <div id="pause">暂停</div>
+    <div id="play">播放</div>
+    <div id="current">显示当前下标</div>
+    <div id="prev">显示前一张下标</div>
+    <div id="next">显示后一张下标</div>
+    <div id="changeSize">改变宽高</div>
+    <div id="insert">在某一张之前插入幻灯片</div>
+    <div id="remove">移除某一张幻灯片</div>
+    <div id="transition">重新设置动画运动时长</div>
+    <div id="interval">重新设置动画过渡时长</div>
+    <div id="setEffect">重新设置动画函数</div>
+    <div id="dispose">摧毁动画</div>
+</div>
+</body>
+</html>

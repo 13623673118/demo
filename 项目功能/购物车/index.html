@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" ng-app="shop">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="angular.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+<div class="header">
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown" ng-init="flag=false">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" ng-click="flag=!flag">购物车 <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu" ng-class="{show:flag}">
+                                <table class="table tab">
+                                    <tr ng-show="gou.length!=0">
+                                        <th>缩略图</th>
+                                        <th>物品类型</th>
+                                        <th>单价</th>
+                                        <th>数量</th>
+                                        <th>总价</th>
+                                        <th>
+                                            <button type="button" class="btn btn-danger dropdown-toggle"
+                                                    data-toggle="dropdown" ng-click="deletekong($index)">清空购物车
+                                        </th>
+                                    </tr>
+                                    <tr ng-repeat="v in gou">
+                                        <td class="col-lg-2"><img ng-src="{{v.image}}" alt="" class="imgg"></td>
+                                        <td class="col-lg- 2">{{v.name}}</td>
+                                        <td class="col-lg-2">{{v.price}}</td>
+                                        <td class="col-lg-2">
+                                            {{v.num}}
+                                            <span ng-click="v.num">+</span>
+                                            <span ng-click="v.num=v.num<=0?0:v.num--">-</span>
+                                        </td>
+                                        <td class="col-lg-2">{{v.price*v.num}}</td>
+                                        <td class="col-lg-2">
+                                            <button type="button" class="btn btn-danger dropdown-toggle"
+                                                    data-toggle="dropdown" ng-click="delete($index)">删除
+                                        </td>
+                                    </tr>
+                                </table>
+                                <li ng-show="gou.length==0">购物车里空空如也......</li>
+                                <li ng-show="gou.length!=0"><a href="#">本次购物{{number()}}件,总计{{totle()}}元</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4" ng-repeat="v in shop track by $index">
+            <div class="thumbnail">
+                <img ng-src="{{v.image}}" alt="">
+                <div class="caption">
+                    <h3>{{v.name}}</h3>
+                    <p>{{v.price}}</p>
+                    <p><a href="#" class="btn btn-success" role="button" ng-click="add($index)">加入购物车</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var app = angular.module('shop', []);
+    app.directive('addShop', [function () {
+        return {}
+    }])
+    app.controller('mainCtrl', ['$scope', function ($scope) {
+        $scope.shop = [
+            {image: "1.jpg", name: '手机', price: 2200, num: 1},
+            {image: "1.jpg", name: '电视机', price: 4200, num: 1},
+            {image: "1.jpg", name: '电脑', price: 6200, num: 1},
+            {image: "1.jpg", name: '洗衣机', price: 2500, num: 1}];
+        $scope.gou = [];
+        $scope.delete = function (index) {
+            $scope.gou.splice(index, 1);
+        };
+        var inde = 0;
+        var flage = true
+        $scope.add = function (index) {
+            var num = 0;
+            angular.forEach($scope.gou, function (v) {
+                if (v.name == $scope.shop[index].name) {
+                    flage = false;
+                    v.num = v.num + 1;
+                }
+            });
+            if (flage) {
+                $scope.gou.push($scope.shop[index]);
+                $scope.gou[inde].num = 1;
+                inde++;
+            }
+            flage = true;
+        };
+        $scope.totle = function () {
+            var t = 0;
+            angular.forEach($scope.gou, function (v) {
+                t += v.price * v.num;
+            });
+            return t;
+        };
+        $scope.number = function () {
+            var n = 0;
+            angular.forEach($scope.gou, function (v) {
+                n += v.num;
+            });
+            return n;
+        }
+
+        $scope.deletekong = function () {
+            $scope.gou.splice(0);
+        }
+    }])
+
+
+    // var shopping=angular.module('shop',[]);
+    // shopping.controller('mainCtrl',['$scope',function($scope){    
+    //     $scope.shop=[
+    //         {id:1,image:"1.jpg",name:'手机',price:2200,num:1},
+    //         {id:2,image:"1.jpg",name:'电视机',price:4200,num:1},
+    //         {id:3,image:"1.jpg",name:'电脑',price:6200,num:1},
+    //         {id:4,image:"1.jpg",name:'洗衣机',price:2500,num:1}
+    //     ];
+    //     $scope.gou=[];      
+    //     $scope.delete=function(id){
+    //         $scope.shop=$scope.shop.filter(function(v,i){
+    //             return v.id!=v.id
+    //         })
+    //     }
+    //     $scope.add=function(id){
+    //         var index;
+    //         var tmp=$scope.shop.find(function(v,i){
+    //             return v.id==id
+    //         })
+    //         if(tmp){
+    //             tmp.num++
+    //         }else {
+    //             var item=$scope.shop.find(function(v,i){
+    //                     return v.id==id
+    //             })
+    //         }
+    //     }
+    // }])
+    // e.preventDefault()//阻止浏览器的默认事件(点击a标签不会跳转)
+    // e.stopPropagation()//组织事件冒泡
+</script>
+</html>

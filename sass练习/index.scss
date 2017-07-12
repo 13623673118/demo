@@ -1,0 +1,70 @@
+/*循环*/
+@for $i from 1 to 5 {
+    .banner-#{$i} {
+        background: #aaccee/$i;
+    }
+}
+@each $list in a,b,c,d {
+    .#{$list} {
+        color: red;
+    }
+}
+/*判断*/
+$i: 6;
+
+.if {
+    @if $i>3 {
+        background: red;
+    }
+    @else {
+        background: green;
+    }
+}
+/*函数*/
+@function double($i) {
+     @return $i*2;
+}
+
+.double {
+    width: double(10px);
+    height: double(20px);
+}
+/*each循环*/
+@mixin userem($design) {
+    $lists: 100px,200px,300px,400px,500px;
+    @each $list in $lists {
+         @media (max-width: $list){
+            html {
+                font-size: $list/$design;
+            }
+        }
+    }
+}
+@include userem(100);
+@mixin cube($num:40px) {
+    width: $num;
+    height: $num;
+}
+$blue: #ace;
+@function con($i) {
+     @return 250px-50*$i;
+    @return $blue/$i;
+}
+
+.flex {
+    @include cube(200px);
+    position: relative;
+    background: $blue;
+
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    @for $i from 1 to 4 {
+        .con-#{$i} {
+            @include cube(250px-50*$i);
+            background: $blue/$i;
+        }
+    }
+}

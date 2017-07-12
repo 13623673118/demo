@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tetris</title>
+    <style>
+        .but {
+            text-align: center;
+            line-height: 30px;
+            font-size: 30px;
+            font-weight: bold
+        }
+    </style>
+</head>
+<body>
+    <div class="but" onclick="ks()">开始</div>
+    <script src="js/block.js"></script>
+    <script src="js/scene.js"></script>
+    <script src="js/square.js"></script>
+    <script type="text/javascript">
+        var body = document.querySelector("body");
+        var block = createBlock(30, 30);
+        var scene = createScene(12, 20, block);
+        scene.style.margin = "auto";
+        body.appendChild(scene);
+
+        function ks(id) {
+            scene.start();
+        }
+    </script>
+</body>
+
+</html>

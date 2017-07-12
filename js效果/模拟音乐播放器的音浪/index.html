@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+<div class="btn">
+    <div id="run">开始</div>
+    <div id="stop">暂停</div>
+</div>
+
+<script>
+    var W = $('.box').outerWidth(),//每一个长条的宽度,定义小方块宽度的时候会用到
+            H = $('.box').outerHeight(),//屏幕的高度,用来计算每一长条里容纳小方块的个数
+            h = W / 4,//小方块的高度
+            radiu = h,//小方块的圆角半径
+            length = Math.floor(H / h),//可以容纳的小方块的个数
+            random = [],//随机生成数字,来控制每一个长方形条中出现小方块的数量
+            t;//时间函数
+    function createDots(parentNode) {
+        $('<div>').css({
+            width: '100%',
+            height: h,
+//            background: 'url("image/dot.png") center 0/cover no-repeat',
+            background: 'maroon',
+            borderRadius: radiu,
+            margin: '0 auto',
+            transform: 'scale(0.8)',
+            opacity: 0,
+            transition: '.4s'
+        }).appendTo(parentNode)
+    }
+
+    for (var i = 0; i < length; i++) {
+        createDots($('.box'));
+    }
+    $('#run').on('click', function () {
+        t = setInterval(function () {
+            random = [];
+            for (var i = 0; i < $('.box').length; i++) {
+                random.push(Math.floor(Math.random() * $('.box').eq(0).find('div').length));
+            }
+            $('.box div').css({opacity: 0});
+            $('.box').each(function (i) {
+                $(this).find('div').slice(0, random[i]).each(function () {
+                    $(this).css({
+                        opacity: 0.62
+                    })
+                })
+            })
+        }, 100)
+        $('#stop').on('click', function () {
+            clearInterval(t)
+        })
+    })
+</script>
+</body>
+</html>

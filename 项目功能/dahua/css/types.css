@@ -1,0 +1,48 @@
+#type {
+    background: url(../img/index-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+#type .lists {
+    width: 100%;
+    height:1.3rem;
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin:auto 0;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap:nowrap;
+    -webkit-flex-wrap: nowrap;
+    justify-content:space-between;
+    -webkit-justify-content: space-between;
+}
+
+#type li {
+    width: 50%;
+    height: 1.3rem;
+    border-right: 1px solid #f0e9cf;
+    -webkit-transform: translatey(-500%);
+    -moz-transform: translatey(-500%);
+    -ms-transform: translatey(-500%);
+    -o-transform: translatey(-500%);
+    transform: translatey(-500%);
+}
+#type li:last-child {
+    border-right: 0;
+}
+
+#type li a {
+    display: block;
+    height: 100%;
+}
+
+#type li img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    height:100%
+}

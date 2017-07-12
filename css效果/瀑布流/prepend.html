@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://jq22.qiniudn.com/masonry-docs.min.js"></script>
+	<style>
+		* { box-sizing: border-box; }
+		body { font-family: sans-serif; }
+		button {font-size: 20px;}
+		.grid {
+		 	max-width: 100%;
+		}
+		.grid:after {
+		  	content: '';
+		  	display: block;
+		  	clear: both;
+		}
+		.grid-item {
+		  	width: 80px;
+		  	height: 60px;
+		  	float: left;
+		  	background: #ace;
+		  	border: 2px solid #333;
+		  	border-radius: 5px;
+		}
+		.grid-item:hover {
+		  	background: #333;
+		}
+		.grid-item--width2 { width: 160px; }
+		.grid-item--width3 { width: 240px; }
+		.grid-item--width4 { width: 320px; }
+		.grid-item--height2 { height: 100px; }
+		.grid-item--height3 { height: 130px; }
+		.grid-item--height4 { height: 180px; }
+	</style>
+</head>
+<body>
+	<button>追加新元素</button>
+	<div class="grid"></div>
+
+	<script>
+	var grid = document.querySelector('.grid');
+	console.log(grid)
+	var msnry = new Masonry( grid, {
+  		columnWidth: 80,
+  		itemSelector: '.grid-item'
+	});
+	var Button = document.querySelector('button');
+	Button.addEventListener( 'click', function() {
+  		var elems = [];
+  		var fragment = document.createDocumentFragment();
+  		for ( var i = 0; i < 2; i++ ) {
+    		var elem = getItemElement();
+    		fragment.appendChild( elem );
+    		elems.push( elem );
+  		}
+	    grid.insertBefore( fragment, grid.firstChild );
+		msnry.prepended( elems );
+	});
+	function getItemElement() {
+		var elem = document.createElement('div');
+		var wRand = Math.random();
+		var hRand = Math.random();
+		var widthClass = wRand > 0.8 ? 'grid-item--width3' : wRand > 0.6 ? 'grid-item--width2' : '';
+		var heightClass = hRand > 0.85 ? 'grid-item--height4' : hRand > 0.6 ? 'grid-item--height3' : hRand > 0.35 ? 'grid-item--height2' : '';
+		elem.className = 'grid-item ' + widthClass + ' ' + heightClass;
+		return elem;
+	}
+</script>
+</body>
+</html>

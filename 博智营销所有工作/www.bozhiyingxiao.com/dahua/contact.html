@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>大华公园世家</title>
+    <link href="http://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+<div class="full" id="contact">
+    <div class="header">
+        <img src="img/pinjian-logo.png" alt=""/>
+        联系我们
+        <a href="index.html"><img src="img/close.png" alt=""/></a>
+    </div>
+    <a href="tel:029-87891888" class="drop one"><img src="img/lianxi-pic1.png"  alt=""/></a>
+    <div class="line a"></div>
+    <div class="address a"></div>
+    <a href="http://j.map.baidu.com/IutNj" class="drop two"><img src="img/lianxi-pic2.png"  alt=""/></a>
+    <div class="line b"></div>
+    <div class="address b"></div>
+</div>
+
+<script>
+    var lists = $('.drop');
+    lists.each(function (i, v) {
+        $(v).delay(i * 200).queue(function () {
+            $(v).addClass('animated bounceInRight')
+        });
+    });
+</script>
+</body>
+</html>

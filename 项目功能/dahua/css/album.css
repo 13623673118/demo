@@ -1,0 +1,79 @@
+#album {
+    background: url(../img/gaikuang-bj.jpg) no-repeat center center ;
+    background-size: 100% auto;
+}
+
+#album .top-bg{
+    width:100%;
+    height:.8rem;
+    margin-top: 0.6rem;
+    background: url("../img/daohang-icon2.png") center center no-repeat;
+    background-size: 4rem auto;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#album-banner {
+    width: 5.8rem;
+    height: 5rem;
+    margin:0 auto;
+}
+
+#album-banner img {
+    width: 100%;
+}
+
+#album-banner .swiper-pagination-bullet {
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 0.4;
+}
+
+#album-banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 12px;
+    opacity: 0.8;
+}
+
+#album p {
+    height: .9rem;
+    width: 100%;
+    font-size: .32rem;
+    line-height: .9rem;
+    color: #ffe696;
+    text-align: center;
+}
+
+#album .logo {
+    height: .5rem;
+    width: .44rem;
+    margin: 0 auto;
+    background: url("../img/pinjian-icon.png") no-repeat;
+    background-size: cover;
+}
+
+#album .btm-bg{
+    width:100%;
+    height:.8rem;
+    background: url("../img/daohang-icon2.png") center center no-repeat;
+    background-size: 4rem auto;
+}
+.box{
+    width:5.8rem;
+    height:7.4rem;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin:auto;
+}

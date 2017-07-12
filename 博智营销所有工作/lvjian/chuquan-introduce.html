@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>科大绿建</title>
+    <link rel="stylesheet" href="css/introduce.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/goods.js"></script>
+</head>
+<body>
+	<div class="nav">
+	    <div class="logo"><a href="index.html#four"></a></div>
+	    <div class="title">公司介绍<img src="img/open.png" alt=""></div>
+	    <ul class="list">
+			<li><a href="chuquan-goods.html">产品</a></li>
+			<li><a href="chuquan-anli.html">案例</a></li>
+			<li><a href="chuquan-news.html">新闻活动</a></li>
+			<li><a href="chuquan-introduce.html">公司介绍</a></li>
+	    </ul>
+	</div>
+	<div class="inner">
+		<div class="mask"></div>
+		<div class="head">
+			<img src="img/about1-banner.jpg" alt="">
+		</div>
+		<div class="body">
+			<h1>认识聚和</h1>
+			<p>HOPAX聚和国际股份有限公司是台湾上市公司（股票代码：6509），创立于1975年。</p>
+			<p>HOPAX自创立以来，在以化学及生物科技为“核心技术”，及长期厚植研发创新能力与高度技术整合的策略之下，经由全面性的技术整合与团队创新的努力，不断创新技术与产品，并且藉以开创新的事业，经过40年来的实践验证，本公司不但已由原来的特用化学事业部衍生出两个新事业部－精密化学及Ｎ次贴事业部，并于印度尼西亚、中国大陆、及英国设立生产及销售据点，长期持续致力于高质量的产品研发、制造及自有品牌之经营，产品销售遍及全球各大洲大多数的国家及地区。</p>
+			<p>近年来更进一步跨入生技医药及个人清洁保养领域，先后成立“聚和生技”与“聚天生医”两家新公司，相关产品触角延伸至绿色建材、癌症标靶药物等。已成为一家拥有多项独家世界性专利及制造技术、世界性品牌营销能力、跨国企业经营模式，且具全球竞争力的综合性高科技公司。</p>
+			<h1>聚和旗下事业部及海外据点</h1>
+			<img src="img/about1-img.jpg" alt="">
+		</div>
+		<div class="footer">
+			<div class="team">
+				<img src="img/weixin.png" alt="">
+				<img src="img/weibo.png" alt="">
+				<ul class="ewm">
+					<li><img src="img/weixinewm.jpg" alt=""></li>
+					<li><img src="img/weiboewm.png" alt=""></li>
+				</ul>
+			</div>
+			<div class="name">陕西科大绿建环保技术服务有限公司 Copyright © 2015</div>
+			<ul class="btm">
+				<li>陕ICP备15005822号</li>
+				<li><a href="http://www.bozhiyingxiao.com/">技术支持：西安博智</a></li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		var btn = $('.footer .team > img');
+		var ewm=$('.footer .team .ewm li');
+		btn.on('click',function(){
+			ewm.css({display:'none'});
+			ewm.eq($(this).index()).css({display:'block'});
+			return false;
+		});
+		$('body').on('click',function(){
+			ewm.css({display:'none'})
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>科大绿建</title>
+    <link rel="stylesheet" href="css/pollution.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<div class="nav">
+    <div class="logo"><a href="index.html#six"></a></div>
+    <div class="title">环保研究院</div>
+</div>
+<div class="inner">
+    <div class="head">
+        <img src="img/yanjiu-banner1.jpg" class="bg" alt="">
+        <img src="img/yanjiuyuan-icon.png" class="mill" alt="">
+    </div>
+    <div class="body">
+        <h1>科大绿建空气治理研究室简介</h1>
+        <p>
+            室内环境监测治理研究室成立于2014年11月。是西安科技大学高新学院所支持设立的产学研平台之一，研究室在成立之初，就以改善居住环境，打造健康室内环境为己任，通过不断丰富监测治理手段，完善理论知识体系。在全体员工和实习生的努力下取得了一批业绩成果，极大地丰富了员工与学生经验，同时也得到了客户的广泛肯定。</p>
+        <p>研究室先后购置了一大批先进的检测仪器和治理设备，为研究室工作人员提供了良好的硬件条件。同时也为学生实践学习提供了一个完备的零距离接触市场和技术平台，取得了良好的社会效应和教学效果。</p>
+        <p>
+            研究室承担着高新学院的实践教学，学生专业技能的培训任务。根据节能技术应用研究院相关管理规定和经营理念，从本校在读学生中选拔了若干实习生，按照研究院培训流程，培养了一批动手能力、沟通能力及组织协调能力俱佳的实习生。在为企业实现效益的同时，也为实习生走向社会增加了必要的竞争筹码。</p>
+    </div>
+    <div class="footer">
+        <div class="team">
+            <img src="img/weixin.png" alt="">
+            <img src="img/weibo.png" alt="">
+            <ul class="ewm">
+                <li><img src="img/weixinewm.jpg" alt=""></li>
+                <li><img src="img/weiboewm.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="name">陕西科大绿建环保技术服务有限公司 Copyright © 2015</div>
+        <ul class="btm">
+            <li>陕ICP备15005822号</li>
+            <li><a href="http://www.bozhiyingxiao.com/">技术支持：西安博智</a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    var btn = $('.footer .team > img');
+    var ewm=$('.footer .team .ewm li');
+    btn.on('click',function(){
+        ewm.css({display:'none'});
+        ewm.eq($(this).index()).css({display:'block'});
+        return false;
+    });
+    $('body').on('click',function(){
+        ewm.css({display:'none'})
+    });
+</script>
+</body>
+</html>

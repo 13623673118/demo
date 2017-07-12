@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>放大镜</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/xzoom.css" />
+    <!-- js -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/xzoom.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <style>
+        .xzoom-container {
+            width: 400px;
+        }
+
+        .xzoom-container>img {
+            width: 100%;
+        }
+        .xzoom-thumbs{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+    <!-- x-zoom主要结构层 -->
+    <div class="xzoom-container">
+        <img class="xzoom" src="images/1.jpg" xoriginal="images/1.jpg" title="这是一张图片" />
+        <div class="xzoom-thumbs">
+            <div>
+                <img class="xzoom-gallery3" width="80" src="images/1.jpg" xpreview="images/1.jpg">
+            </div>
+            <div>
+                <img class="xzoom-gallery3" width="80" src="images/2.jpg">
+            </div>
+            <div>
+                <img class="xzoom-gallery3" width="80" src="images/3.jpg">
+            </div>
+            <div>
+                <img class="xzoom-gallery3" width="80" src="images/4.jpg">
+            </div>
+        </div>
+    </div>
+    <!-- x-zoom主要结构层 -->
+
+    <!-- 这个div规定了id值，目的是用来显示放大区域通过position:#top-right -->
+    <div id="top-right" style="position:fixed;top:0;right:0;width:200px;height:200px"></div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>isotope分类和排序</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="choose">
+        <button data-filter="*">ALL</button>
+        <button data-filter=".one">A</button>
+        <button data-filter=".two">2</button>
+        <button data-filter=".three">3</button>
+        <button data-filter=".four">4</button>
+        <button data-filter=".five">5</button>
+        <button data-filter=".heart">heart</button>
+        <button data-filter=".cube">cube</button>
+        <button data-filter=".meihua">meihua</button>
+        <button data-filter=".heitao">heitao</button>
+    </div>
+    <div class="container">
+        <div class="poke one heart"><img src="img/1h.png" alt=""></div>
+        <div class="poke one cube"><img src="img/1d.png" alt=""></div>
+        <div class="poke one meihua"><img src="img/1c.png" alt=""></div>
+        <div class="poke one heitao"><img src="img/1s.png" alt=""></div>
+        <div class="poke two heart"><img src="img/2h.png" alt=""></div>
+        <div class="poke two cube"><img src="img/2d.png" alt=""></div>
+        <div class="poke two meihua"><img src="img/2c.png" alt=""></div>
+        <div class="poke two heitao"><img src="img/2s.png" alt=""></div>
+        <div class="poke three heart"><img src="img/3h.png" alt=""></div>
+        <div class="poke three cube"><img src="img/3d.png" alt=""></div>
+        <div class="poke three meihua"><img src="img/3c.png" alt=""></div>
+        <div class="poke three heitao"><img src="img/3s.png" alt=""></div>
+        <div class="poke four heart"><img src="img/4h.png" alt=""></div>
+        <div class="poke four cube"><img src="img/4d.png" alt=""></div>
+        <div class="poke four meihua"><img src="img/4c.png" alt=""></div>
+        <div class="poke four heitao"><img src="img/4s.png" alt=""></div>
+        <div class="poke five heart"><img src="img/5h.png" alt=""></div>
+        <div class="poke five cube"><img src="img/5d.png" alt=""></div>
+        <div class="poke five meihua"><img src="img/5c.png" alt=""></div>
+        <div class="poke five heitao"><img src="img/5s.png" alt=""></div>
+        <div class="poke six heart"><img src="img/6h.png" alt=""></div>
+        <div class="poke six cube"><img src="img/6d.png" alt=""></div>
+        <div class="poke six meihua"><img src="img/6c.png" alt=""></div>
+        <div class="poke six heitao"><img src="img/6s.png" alt=""></div>
+        <div class="poke seven heart"><img src="img/7h.png" alt=""></div>
+        <div class="poke seven cube"><img src="img/7d.png" alt=""></div>
+        <div class="poke seven meihua"><img src="img/7c.png" alt=""></div>
+        <div class="poke seven heitao"><img src="img/7s.png" alt=""></div>
+        <div class="poke eight heart"><img src="img/8h.png" alt=""></div>
+        <div class="poke eight cube"><img src="img/8d.png" alt=""></div>
+        <div class="poke eight meihua"><img src="img/8c.png" alt=""></div>
+        <div class="poke eight heitao"><img src="img/8s.png" alt=""></div>
+        <div class="poke nine heart "><img src="img/9h.png" alt=""></div>
+        <div class="poke nine cube "><img src="img/9d.png" alt=""></div>
+        <div class="poke nine meihua "><img src="img/9c.png" alt=""></div>
+        <div class="poke nine heitao "><img src="img/9s.png" alt=""></div>
+        <div class="poke ten heart"><img src="img/Th.png" alt=""></div>
+        <div class="poke ten cube"><img src="img/Td.png" alt=""></div>
+        <div class="poke ten meihua"><img src="img/Tc.png" alt=""></div>
+        <div class="poke ten heitao"><img src="img/Ts.png" alt=""></div>
+        <div class="poke eleven heart"><img src="img/Jh.png" alt=""></div>
+        <div class="poke eleven cube"><img src="img/Jd.png" alt=""></div>
+        <div class="poke eleven meihua"><img src="img/Jc.png" alt=""></div>
+        <div class="poke eleven heitao"><img src="img/Js.png" alt=""></div>
+        <div class="poke twelve heart"><img src="img/Qh.png" alt=""></div>
+        <div class="poke twelve cube"><img src="img/Qd.png" alt=""></div>
+        <div class="poke twelve meihua"><img src="img/Qc.png" alt=""></div>
+        <div class="poke twelve heitao"><img src="img/Qs.png" alt=""></div>
+        <div class="poke thirteen heart "><img src="img/Kh.png" alt=""></div>
+        <div class="poke thirteen cube"><img src="img/Kd.png" alt=""></div>
+        <div class="poke thirteen meihua"><img src="img/Kc.png" alt=""></div>
+        <div class="poke thirteen heitao"><img src="img/Ks.png" alt=""></div>
+    </div>
+    <script>
+    var grid=$('.container');
+        grid.isotope();
+        $('.choose').on('click','button',function(){
+            var value=$(this).attr('data-filter');
+            grid.isotope({
+                filter:value
+            })
+        })
+    </script>
+</body>
+
+</html>

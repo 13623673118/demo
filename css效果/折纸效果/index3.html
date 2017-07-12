@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFold: 像纸一样展开的效果</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/pfold.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom2.css" />
+    <script src="http://cdn.bootcss.com/modernizr/2.8.3/modernizr.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="js/pfold.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><strong>PFold:</strong> 像纸一样展开的效果</h1>
+            <nav class="codrops-demos">
+                <a href="index.html">Demo 1</a>
+                <a href="index2.html">Demo 2</a>
+                <a class="current-demo" href="index3.html">Demo 3</a>
+            </nav>
+        </header>
+        <section class="main demo-2">
+            <div id="grid" class="grid clearfix">
+                <div class="uc-container">
+                    <div class="uc-initial-content">
+                        <img src="images/thumbs/1.jpg" alt="image01" />
+                        <span class="icon-eye"></span>
+                    </div>
+                    <div class="uc-final-content">
+                        <img src="images/large/1.jpg" alt="image01-large" />
+                        <div class="title">
+                            <h4>The Professor</h4> by Dan Matutina
+                            <a href="#" class="icon-link"></a>
+                        </div>
+                        <span class="icon-cancel"></span>
+                    </div>
+                </div>
+                <div class="uc-container">
+                    <div class="uc-initial-content">
+                        <img src="images/thumbs/2.jpg" alt="image02" />
+                        <span class="icon-eye"></span>
+                    </div>
+                    <div class="uc-final-content">
+                        <img src="images/large/2.jpg" alt="image02-large" />
+                        <div class="title">
+                            <h4>Planet</h4> by Dan Matutina
+                            <a href="#" class="icon-link"></a>
+                        </div>
+                        <span class="icon-cancel"></span>
+                    </div>
+                </div>
+
+                <div class="uc-container">
+                    <div class="uc-initial-content">
+                        <img src="images/thumbs/3.jpg" alt="image03" />
+                        <span class="icon-eye"></span>
+                    </div>
+                    <div class="uc-final-content">
+                        <img src="images/large/3.jpg" alt="image03-large" />
+                        <div class="title">
+                            <h4>Angry Nerd Blofeld</h4> by Dan Matutina
+                            <a href="#" class="icon-link"></a>
+                        </div>
+                        <span class="icon-cancel"></span>
+                    </div>
+                </div>
+
+                <div class="uc-container">
+                    <div class="uc-initial-content">
+                        <img src="images/thumbs/4.jpg" alt="image04" />
+                        <span class="icon-eye"></span>
+                    </div>
+                    <div class="uc-final-content">
+                        <img src="images/large/4.jpg" alt="image04-large" />
+                        <div class="title">
+                            <h4>Ero Senin</h4> by Dan Matutina
+                            <a href="#" class="icon-link"></a>
+                        </div>
+                        <span class="icon-cancel"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script type="text/javascript">
+        $(function() {
+            var opened = false;
+            $('#grid > div.uc-container').each(function(i) {
+                var $item = $(this),
+                    direction;
+                switch (i) {
+                    case 0:
+                        direction = ['right', 'bottom'];
+                        break;
+                    case 1:
+                        direction = ['left', 'bottom'];
+                        break;
+                    case 2:
+                        direction = ['right', 'top'];
+                        break;
+                    case 3:
+                        direction = ['left', 'top'];
+                        break;
+                }
+                var pfold = $item.pfold({
+                    folddirection: direction,
+                    speed: 300,
+                    onEndFolding: function() {
+                        opened = false;
+                    },
+                    centered: true
+                });
+                $item.find('span.icon-eye').on('click', function() {
+                    if (!opened) {
+                        opened = true;
+                        pfold.unfold();
+                    }
+                }).end().find('span.icon-cancel').on('click', function() {
+                    pfold.fold();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

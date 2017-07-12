@@ -1,0 +1,73 @@
+body, html {
+    height:100%;
+}
+
+#scene {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.layer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.layer1 {
+    background-image: url(../img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.layer2 {
+    background-image: url(../img/2.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    position: absolute;
+    width:30vw;
+    height:30vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    z-index: 101;
+    text-align:justify;
+}
+
+
+@media (max-width:700px) {
+    .layer2 {
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 167%;
+        height: 77vh;
+        left: -69%;
+        top: 27%;
+    }
+
+    .layer1 {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 115%;
+        left: -5%;
+        top: -1%;
+    }
+
+
+}

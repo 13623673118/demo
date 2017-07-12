@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>带方向感应的鼠标滑过图片3D动画特效</title>
+    <link rel="stylesheet" type="text/css" href="css/demo2.css">
+</head>
+<body>
+<section>
+    <div class='container'>
+        <ul>
+            <li>
+                <a class='normal' href='#'><img src="img/i-d.png" width="100%" height="100%" alt=""></a>
+                <div class='info'>
+                    <h3>敖德萨多翁群翁</h3>
+                    <p>我去而且我的撒发放爱迪生多群翁群无大所多撒付撒付若群翁</p>
+                </div>
+            </li>
+            <li>
+                <a class='normal' href='#'></a>
+                <div class='info'>
+                    <h3>敖德萨多翁群翁</h3>
+                    <p>我去而且我的撒发放爱迪生多群翁群无大所多撒付撒付若群翁</p>
+                </div>
+            </li>
+            <li>
+                <a class='normal' href='#'></a>
+                <div class='info'>
+                    <h3>敖德萨多翁群翁</h3>
+                    <p>我去而且我的撒发放爱迪生多群翁群无大所多撒付撒付若群翁</p>
+                </div>
+            </li>
+            <li>
+                <a class='normal' href='#'></a>
+                <div class='info'>
+                    <h3>敖德萨多翁群翁</h3>
+                    <p>我去而且我的撒发放爱迪生多群翁群无大所多撒付撒付若群翁</p>
+                </div>
+            </li>
+            <li>
+                <a class='normal' href='#'></a>
+                <div class='info'>
+                    <h3>敖德萨多翁群翁</h3>
+                    <p>我去而且我的撒发放爱迪生多群翁群无大所多撒付撒付若群翁</p>
+                </div>
+            </li>
+            <li>
+                <a class='normal' href='#'></a>
+                <div class='info'>
+                    <h3>敖德萨多翁群翁</h3>
+                    <p>我去而且我的撒发放爱迪生多群翁群无大所多撒付撒付若群翁</p>
+                </div>
+            </li>
+            <li>
+                <a class='normal' href='#'></a>
+                <div class='info'>
+                    <h3>敖德萨多翁群翁</h3>
+                    <p>我去而且我的撒发放爱迪生多群翁群无大所多撒付撒付若群翁</p>
+                </div>
+            </li>
+            <li>
+                <a class='normal' href='#'></a>
+                <div class='info'>
+                    <h3>敖德萨多翁群翁</h3>
+                    <p>我去而且我的撒发放爱迪生多群翁群无大所多撒付撒付若群翁</p>
+                </div>
+            </li>
+            <li>
+                <a class='normal' href='#'></a>
+                <div class='info'>
+                    <h3>敖德萨多翁群翁</h3>
+                    <p>我去而且我的撒发放爱迪生多群翁群无大所多撒付撒付若群翁</p>
+                </div>
+            </li>
+            <li>
+                <a class='normal' href='#'></a>
+                <div class='info'>
+                    <h3>敖德萨多翁群翁</h3>
+                    <p>我去而且我的撒发放爱迪生多群翁群无大所多撒付撒付若群翁</p>
+                </div>
+            </li>
+            <li>
+                <a class='normal' href='#'></a>
+                <div class='info'>
+                    <h3>敖德萨多翁群翁</h3>
+                    <p>我去而且我的撒发放爱迪生多群翁群无大所多撒付撒付若群翁</p>
+                </div>
+            </li>
+            <li>
+                <a class='normal' href='#'></a>
+                <div class='info'>
+                    <h3>敖德萨多翁群翁</h3>
+                    <p>我去而且我的撒发放爱迪生多群翁群无大所多撒付撒付若群翁</p>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</section>
+<script>
+    var nodes = document.querySelectorAll('li'), _nodes = [].slice.call(nodes, 0);
+    var getDirection = function (ev, obj) {
+        var w = obj.offsetWidth,
+                h = obj.offsetHeight,
+                x = ev.pageX - obj.offsetLeft - w / 2 * (w > h ? h / w : 1),
+                y = ev.pageY - obj.offsetTop - h / 2 * (h > w ? w / h : 1),
+                d = Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
+        return d;
+    };
+    var addClass = function (ev, obj, state) {
+        var direction = getDirection(ev, obj), className = '';
+        obj.className = '';
+        switch (direction) {
+            case 0:
+                className = '-top';
+                break;
+            case 1:
+                className = '-right';
+                break;
+            case 2:
+                className = '-bottom';
+                break;
+            case 3:
+                className = '-left';
+                break;
+        }
+        obj.classList.add(state + className);
+    };
+    _nodes.forEach(function (el) {
+        el.addEventListener('mouseover', function (ev) {
+            addClass(ev, this, 'in');
+        }, false);
+        el.addEventListener('mouseout', function (ev) {
+            addClass(ev, this, 'out');
+        }, false);
+    });
+</script>
+</body>
+</html>

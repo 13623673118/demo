@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            background: #000;
+        }
+
+        #otext2,
+        #otext1 {
+            width: 500px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="otext1"></div>
+    <div id="otext2"></div>
+    <script src="elasticText.js"></script>
+    <script type="text/javascript">
+        elasticText(
+            {
+                id: 'otext2',
+                color: 'rgb(33, 150, 243)',
+                fontSize: 20,
+                duration: 100,
+                effact: 'easeOut',
+                content: 'hello,world'
+            },
+            {
+                id: 'otext1',
+                color: 'rgb(255, 235, 59)',
+                fontSize: 20,
+                duration: 30,
+                effact: 'jump',
+                content: 'hello,world'
+            }
+        );
+    </script>
+</body>
+
+</html>

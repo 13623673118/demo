@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <img src="b.jpg" alt="" class="blur">
+        <div class="box">
+            <img src="b.jpg" alt="" class="img">
+        </div>
+    </div>
+    <script>
+        $('body').perspective({
+            key_val: [37, 39],
+            type: 'keydown',
+            types: 'mousemove',
+            targets: '.wrap',
+            shape: 'circular'
+        })
+    </script>
+</body>
+
+</html>

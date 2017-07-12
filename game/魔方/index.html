@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>魔方</title>
+</head>
+<body>
+
+        <div id="mf" style="margin:120px auto 80px;"></div>
+        <div class="cs" id="cs" style="width:300px; margin:0 auto;">
+            <input type="button" value="重置颜色" />
+            <input type="button" value="重置位置" />
+            <input type="button" value="随机打乱" />
+        </div>
+        <script src="cube.js"></script>
+        <script>
+            var cube = new Cube('mf', {
+                borderLength: 200,// 魔方边长
+                order:3,//魔方层级
+                mouseSen:0.5,//拖拽时鼠标灵敏度,默认0.5
+                vColor:'#000',//魔方材料颜色,默认#999
+                // colors:[[][][][][][]],//魔方各个面的颜色,默认正常魔方的颜色
+                oneTime:500//转动一下时需要的毫秒时间，默认500
+
+            });
+            var aInt2 = document.getElementById('cs').getElementsByTagName('input');
+            aInt2[0].onclick = function() {
+                cube.initColor();
+            };
+            aInt2[1].onclick = function() {
+                cube.initL();
+            };
+            aInt2[2].onclick = function() {
+                cube.random();
+            };
+        </script>
+</body>
+</html>
