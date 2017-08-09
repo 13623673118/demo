@@ -11,6 +11,7 @@ $(function(){
     var canvas=document.getElementById("canvas");
     var context=canvas.getContext("2d");
     canvas.width=width;
+
     canvas.height=height;
     window.setInterval(function(){
         var curr=new Date();
@@ -20,23 +21,23 @@ $(function(){
         // 当时间的秒数改变时添加彩色小球
         if(preSeconds!=curSeconds){
             if(parseInt(curHours/10)!=parseInt(preHours/10)){
-                addBall(left,top,parseInt(curHours/10));     
+                addBall(left,top,parseInt(curHours/10));
             }
             if(parseInt(curHours%10)!=parseInt(preHours%10)){
-                addBall(left+15*(r+1),top,parseInt(curHours%10));   
+                addBall(left+15*(r+1),top,parseInt(curHours%10));
             }
             if(parseInt(curMinutes/10)!=parseInt(preMinutes/10)){
-                addBall(left+39*(r+1),top,parseInt(curMinutes/10));     
+                addBall(left+39*(r+1),top,parseInt(curMinutes/10));
             }
             if(parseInt(curMinutes%10)!=parseInt(preMinutes%10)){
-                addBall(left+54*(r+1),top,parseInt(curMinutes%10));     
+                addBall(left+54*(r+1),top,parseInt(curMinutes%10));
             }
             if(parseInt(curSeconds/10)!=parseInt(preSeconds/10)){
-                addBall(left+78*(r+1),top,parseInt(curSeconds/10));     
+                addBall(left+78*(r+1),top,parseInt(curSeconds/10));
             }
             if(parseInt(curSeconds%10)!=parseInt(preSeconds%10)){
-                addBall(left+93*(r+1),top,parseInt(curSeconds%10));     
-            }     
+                addBall(left+93*(r+1),top,parseInt(curSeconds%10));
+            }
         }
         render(context);
     },50);
@@ -47,7 +48,7 @@ $(function(){
                 if(digit[num][i][j]==1){
                     var ball={
                         x:x+j*2*(r+1)+r+1,
-                        y:y+i*2*(r+1)+r+1,                   
+                        y:y+i*2*(r+1)+r+1,
                         g:1.5+Math.random(),
                         vx:Math.pow(-1,Math.ceil(Math.random()*1000))*4,//结果为-4/4
                         vy:-5,
@@ -119,5 +120,8 @@ $(function(){
                 }
             }
         }
-    } 
+    }
+    $(window).on('resize',function(){
+      render();
+    })
 })
