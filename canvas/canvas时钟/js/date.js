@@ -121,7 +121,5 @@ $(function(){
             }
         }
     }
-    $(window).on('resize',function(){
-      render();
-    })
+
 })
