@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container {
+            width:800px;
+            height:250px;
+        }
+        #container div{
+            width:200px;
+            height:125px;
+            float: left;
+        }
+        img{
+            height:100%;
+            width:100%;
+            -webkit-transition: 1s;
+            -moz-transition:  1s;
+            -ms-transition:  1s;
+            -o-transition:  1s;
+            transition:  1s;
+        }
+        .dragStart img{
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body>
+<div id="container" draggable="true">
+    <div draggable="true">
+        <img src="http://images.cnblogs.com/cnblogs_com/jscode/556652/o_baidu.jpg">
+    </div>
+    <div draggable="true">
+        <img src="http://images.cnblogs.com/cnblogs_com/jscode/556652/o_163.jpg">
+    </div>
+    <div draggable="true">
+        <img src="http://images.cnblogs.com/cnblogs_com/jscode/556652/o_iqiyi.jpg">
+    </div>
+    <div draggable="true">
+        <img src="http://images.cnblogs.com/cnblogs_com/jscode/556652/o_qq.jpg">
+    </div>
+    <div draggable="true">
+        <img src="http://images.cnblogs.com/cnblogs_com/jscode/556652/o_weibo.jpg">
+    </div>
+    <div draggable="true">
+        <img src="http://images.cnblogs.com/cnblogs_com/jscode/556652/o_taobao.jpg">
+    </div>
+    <div draggable="true">
+        <img src="http://images.cnblogs.com/cnblogs_com/jscode/556652/o_youku.jpg">
+    </div>
+    <div draggable="true">
+        <img src="http://images.cnblogs.com/cnblogs_com/jscode/556652/o_hao123.jpg">
+    </div>
+</div>
+<script>
+    //拖拽对象
+    var dragElements = document.querySelectorAll('#container div');
+    //追踪被拖动的元素
+    var elementDragged = null;
+    for (var i = 0; i < dragElements.length; i++) {
+        dragElements[i].setAttribute('id',i);
+        //拖拽开始:dragstart
+        dragElements[i].addEventListener('dragstart', function (e) {
+                e.dataTransfer.setData('text', this.id);
+                elementDragged = this;
+        });
+        //被拖动的元素进入目标元素中时触发:dragenter
+        dragElements[i].addEventListener('dragenter', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (this.id != elementDragged.id) {
+                var tempInnerHtml = this.innerHTML;
+                this.innerHTML = elementDragged.innerHTML;
+                elementDragged.innerHTML = tempInnerHtml;
+                elementDragged.removeAttribute('class');
+                elementDragged = this;
+            }
+        });
+        //被拖动的元素在目标元素中移动时持续触发:dragover
+        dragElements[i].addEventListener('dragover', function (e) {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+            elementDragged.setAttribute('class', 'dragStart');
+            return false;
+        });
+        //被拖动的元素离开目标元素时触发:dragleave
+        dragElements[i].addEventListener('dragleave', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (this.id != elementDragged.id) {
+                this.removeAttribute('class');
+            }
+        });
+        //被拖动的元素放下时触发:drop
+        dragElements[i].addEventListener('drop', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var targetId = e.dataTransfer.getData('text');
+            elementDragged.removeAttribute('class');
+            return false;
+        });
+        //拖拽结束:dragend
+        dragElements[i].addEventListener('dragend', function (e) {
+            elementDragged = null;
+            this.removeAttribute('class')
+        });
+    }
+</script>
+</body>
+</html>
