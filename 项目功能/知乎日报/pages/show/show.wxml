@@ -1,5 +1,0 @@
-<view class="content" touchstart="start" touchmove="move">
-    <view class="title">{{title}}</view>
-    <image src="{{image}}" mode="aspectFill"></image>
-    <view class="body">{{body}}</view>
-</view>
