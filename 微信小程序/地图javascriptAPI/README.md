@@ -1,5 +1,5 @@
 # 百度地图微信小程序JavaScript API v1.0
-**相关链接：**  
+**相关链接：**
 [百度地图开放平台](http://lbsyun.baidu.com/)  
 [百度地图微信小程序JSAPI服务](http://lbsyun.baidu.com/index.php?title=wxjsapi)  
 ##更新日志##
