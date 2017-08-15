@@ -20,7 +20,7 @@ $signPackage = $jssdk->GetSignPackage();
     <link rel="stylesheet" href="css/index.css">
     <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script src="js/jquery.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/drag.js"></script>
     <script>
 	var _hmt = _hmt || [];
 	(function() {

@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jQuery图片列表拖拽排序</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="drag.js"></script>
+</head>
+<body>
+<ul id="ul1">
+    <li><img src="img/1.png" width="200" height="150" /></li>
+    <li><img src="img/2.png" width="200" height="150" /></li>
+    <li><img src="img/3.png" width="200" height="150" /></li>
+    <li><img src="img/4.png" width="200" height="150" /></li>
+    <li><img src="img/5.png" width="200" height="150" /></li>
+    <li><img src="img/6.png" width="200" height="150" /></li>
+</ul>
+<script>
+    $(function () {
+        drag('#ul1')
+    })
+</script>
+</body>
+</html>
