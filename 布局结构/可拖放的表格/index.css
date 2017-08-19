@@ -1,0 +1,60 @@
+
+body {
+    font-size: 12px
+}
+
+#tab {
+    border-collapse: collapse;
+}
+
+.edit {
+    height: 16px;
+    width: 98%;
+    background-color: #EFF7FF;
+    font-size: 12px;
+    border: 0;
+}
+
+#tab tbody td {
+    overflow: hidden
+}
+
+#tab td {
+    border: 1px solid #CECFCE;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+#tab td.tc {
+    text-align: center;
+}
+
+.cc {
+    width: 10px;
+    height: 6px;
+    border: 1px solid #999999;
+    background-color: #FFFFFF;
+    position: absolute;
+    display: none;
+}
+
+#tab td.red {
+    border-color: #f30;
+}
+
+.ww {
+    height: 100%;
+    width: 1px;
+    background: #CECFCE;
+    float: right;
+    margin-right: -1px;
+    cursor: sw-resize
+}
+
+.line {
+    width: 2px;
+    background-color: #999999;
+    position: absolute;
+    display: none
+}
