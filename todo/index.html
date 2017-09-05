@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery3.2.1.js"></script>
+    <script src="vue.js"></script>
+    <script src="iscroll4.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="header">
+        <div v-text='title'></div>
+        <input type="text" placeholder="what are you want to do ?" v-model='newText' @keyup.enter='addNewlist'>
+    </div>
+    <div id="wrapper" class="wrapper">
+        <ul v-cloak>
+            <li v-for='(item,index) in items' :class='{finished:item.isFinished}' >
+                <div class="todo">{{item.text}}</div>
+                <div class="control">
+                    <button class="done"  @click='toggleFinish(item)'>完成</button>
+                    <!-- todo vm.$emit():触发当前实例上的事件-->
+                    <button class="del" @click="$emit(items.splice(index,1))">删除</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
