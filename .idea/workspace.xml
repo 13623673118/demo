@@ -1,8 +1,391 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b247381-30ab-4c6b-8b26-a850ea2d5638" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
+    <list default="true" id="1b247381-30ab-4c6b-8b26-a850ea2d5638" name="Default" comment="commit">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitingore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iconfont/.idea/icon.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iconfont/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iconfont/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iconfont/icon.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iconfont/iconfont.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll上拉刷新下拉加载/.idea/iscroll练习.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll上拉刷新下拉加载/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll上拉刷新下拉加载/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll上拉刷新下拉加载/dog.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll上拉刷新下拉加载/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll上拉刷新下拉加载/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll上拉刷新下拉加载/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll上拉刷新下拉加载/iscroll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll上拉刷新下拉加载/test.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll下拉加载/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll下拉加载/images/loading.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll下拉加载/images/pull.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll下拉加载/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll下拉加载/js/iscroll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll下拉加载/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll下拉加载/json/ay.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/.nodemonignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/RELEASENOTES.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/build.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/build/iscroll-infinite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/build/iscroll-lite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/build/iscroll-probe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/build/iscroll-zoom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/build/iscroll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/2d-scroll/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/barebone/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/bounce-easing/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/carousel/gaugin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/carousel/giotto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/carousel/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/carousel/leonardo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/carousel/warhol.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/click/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/demoUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/event-passthrough/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/forms/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/horizontal/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/infinite/dataset.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/infinite/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/key-bindings/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/minimap/ermine.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/minimap/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/no-transition/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/parallax/galaxies1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/parallax/galaxies2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/parallax/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/parallax/stars.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/probe/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/scroll-to-element/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/scrollbars/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/simple/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/snap/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/styled-scrollbars/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/tap/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/demos/zoom/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/close.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/default/_animate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/default/handleEvent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/indicator/_initIndicators.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/indicator/_transitionTime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/indicator/_transitionTimingFunction.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/indicator/_translate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/indicator/build.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/indicator/indicator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/infinite/build.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/infinite/infinite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/infinite/refresh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/keys/build.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/keys/keys.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/open.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/probe/_animate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/probe/_move.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/probe/build.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/probe/indicator._move.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/probe/probe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/snap/_end.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/snap/build.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/snap/refresh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/snap/snap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/wheel/build.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/wheel/wheel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/zoom/build.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/zoom/handleEvent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/zoom/refresh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/iscroll官网下载/src/zoom/zoom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js效果/turnjs4/changelog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/.idea/mescroll-master.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/base/list-full-lock.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/base/list-full-lock.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/base/list-mescroll-more.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/base/list-mescroll-more.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/base/list-mescroll-one.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/base/list-mescroll-one.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/base/list-news.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/base/list-news.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/base/list-products.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/base/list-products.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/base/mescroll-options.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/base/mescroll-options.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/beibei.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/beibei.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/img/beibei1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/img/beibei2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/img/footer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/img/header.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/option/mescroll-bb1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/option/mescroll-bb2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/option/mescroll-bb3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/option/mescroll-bb4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/option/mescroll-option.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/option/mescroll-option.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/option/mescroll-progress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/option/mescroll-slogan.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/beibei/option/mescroll-totop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/mescroll-empty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/mescroll-totop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd24.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd28.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/pd9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/img/swiper.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/pay-wx.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/pay-zfb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/pdlist1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/res/pdlist2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/img/footer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/img/header.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/img/xinlang1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/img/xinlang2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/option/mescroll-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/option/mescroll-option.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/option/mescroll-option.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/option/mescroll-progress1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/option/mescroll-progress2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/option/mescroll-progress3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/option/mescroll-progress4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/option/mescroll-progress5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/option/mescroll-progress6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/option/mescroll-totop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/xinlang.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/xinlang/xinlang.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/yabuli/img/header.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/yabuli/option/mescroll-empty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/yabuli/option/mescroll-nodata.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/yabuli/option/mescroll-option.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/yabuli/option/mescroll-option.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/yabuli/option/mescroll-progress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/yabuli/option/mescroll-slogan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/yabuli/option/mescroll-totop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/yabuli/yabuli.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/yabuli/yabuli.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/zhihu/img/zhihu1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/zhihu/img/zhihu2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/zhihu/img/zhihu3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/zhihu/img/zhihu4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/zhihu/img/zhihu5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/zhihu/option/mescroll-option.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/zhihu/option/mescroll-option.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/zhihu/option/mescroll-progress.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/zhihu/option/mescroll-totop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/zhihu/zhihu.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/demo/zhihu/zhihu.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/dist/mescroll.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/dist/mescroll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/dist/mescroll.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mescroll上拉加载下拉刷新/dist/mescroll.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/route/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/route/.idea/route.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/route/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/route/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/route/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/route/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/.idea/todo.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/iscroll4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/jquery3.2.1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todo/vue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/.babelrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/.postcssrc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/build/build.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/build/check-versions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/build/dev-client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/build/dev-server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/build/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/build/vue-loader.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/build/webpack.base.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/build/webpack.dev.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/build/webpack.prod.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/config/dev.env.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/config/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/config/prod.env.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/package-lock.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/src/App.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/src/assets/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/src/components/componentA.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/src/components/hello.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/src/storage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/static/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist/划重点.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/app.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/app.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/img/marker_red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/img/marker_yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/libs/bmap-wx.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/index/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/index/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/index/index.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/index/index.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/regeocoding/regeocoding.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/regeocoding/regeocoding.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/regeocoding/regeocoding.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/regeocoding/regeocoding.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/search/search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/search/search.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/search/search.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/search/search.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/suggestion/suggestion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/suggestion/suggestion.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/suggestion/suggestion.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/suggestion/suggestion.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/weather/weather.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/weather/weather.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/weather/weather.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/demo/pages/weather/weather.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/src/bmap-wx.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/微信小程序/地图javascriptAPI/src/bmap-wx.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/.idea/3d1d9690-4869-11e4-8913-00163e001348.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/adaptive-text.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/background.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/base-min.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/base-single.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/black-white.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/callback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/cors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/data-url.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/explicit-parent-2-parents.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/explicit-parent-via-opts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/explicit-parent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/images/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/images/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/images/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/images/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/images/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/images/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/images/black-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/images/white-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/jquery.adaptive-backgrounds.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/remote-image.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/waypoints.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/images/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/images/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/images/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/images/dark_checkered_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/images/icon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/images/logo1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/js/color-thief.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/js/libs/jquery-1.6.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/js/libs/jquery.imagesloaded.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/js/libs/jquery.lettering.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/js/libs/modernizr-2.0.6.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/js/libs/mustache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/获取图像的主色/color-thief/js/libs/quantize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/access_token.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/css/base.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/css/index.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/img/headlogo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/jsapi_ticket.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/jssdk.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/jssdk/sample.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/laypage/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/laypage/laypage/laypage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/laypage/laypage/skin/laypage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/todo/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/todo/css/index.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/todo/font/iconfont.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/todo/font/iconfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/todo/font/iconfontbi.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/todo/image/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/todo/image/todoicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/todo/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/todo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/todo/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/todo/jquery-1.12.0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/todo/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/项目功能/todo/js/jquery.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css练习/css学习.html" afterPath="$PROJECT_DIR$/Practice/css test/css学习.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css练习/img/timg.jpg" afterPath="$PROJECT_DIR$/Practice/css test/img/timg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/drag.html" afterPath="$PROJECT_DIR$/Practice/html test/drag.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/input.html" afterPath="$PROJECT_DIR$/Practice/html test/input.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sass练习/index.css" afterPath="$PROJECT_DIR$/Practice/sass test/index.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sass练习/index.html" afterPath="$PROJECT_DIR$/Practice/sass test/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sass练习/index.scss" afterPath="$PROJECT_DIR$/Practice/sass test/index.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/条件注释.html" afterPath="$PROJECT_DIR$/Practice/html test/条件注释.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/demo.iml" afterPath="$PROJECT_DIR$/.idea/demo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,20 +400,20 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="条件注释.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/条件注释.html">
+        <entry file="file://$PROJECT_DIR$/Practice/html test/条件注释.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state relative-caret-position="390">
+              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../blog/_config.yml">
+      <file leaf-file-name="css学习.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Practice/css test/css学习.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="81" column="16" lean-forward="true" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+            <state relative-caret-position="347">
+              <caret line="464" column="26" lean-forward="true" selection-start-line="464" selection-start-column="26" selection-end-line="464" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -41,9 +424,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -54,14 +437,19 @@
       <find>c</find>
       <find>menu</find>
       <find>grid</find>
-      <find>document</find>
       <find>images</find>
       <find>getcla</find>
       <find>start</find>
       <find>dep</find>
+      <find>ipadscrollbar</find>
+      <find>document</find>
+      <find>Ipad</find>
+      <find>ipad</find>
+      <find>scroll</find>
     </findStrings>
     <replaceStrings>
       <replace>img</replace>
+      <replace>board</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -71,9 +459,9 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/布局结构/拖拽排序/drag.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/布局结构/拖拽排序/index.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Svg/svg.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/布局结构/拖拽排序/index.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/布局结构/拖拽排序/drag.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -86,10 +474,26 @@
         <option value="$PROJECT_DIR$/布局结构/拖拽排序/move.js" />
         <option value="$PROJECT_DIR$/布局结构/拖拽排序/index.js" />
         <option value="$PROJECT_DIR$/布局结构/拖拽排序/index.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/微信小程序/地图javascriptAPI/README.md" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/../blog/_config.yml" />
+        <option value="$PROJECT_DIR$/iscroll上拉刷新下拉加载/index.css" />
+        <option value="$PROJECT_DIR$/iscroll上拉刷新下拉加载/index.html" />
+        <option value="$PROJECT_DIR$/布局结构/可以自由操作的面板/js/ipad.js" />
+        <option value="$PROJECT_DIR$/布局结构/可以自由操作的面板/js/scrollBar.js" />
+        <option value="$PROJECT_DIR$/布局结构/可以自由操作的面板/js/board.js" />
+        <option value="$PROJECT_DIR$/布局结构/可以自由操作的面板/index.css" />
+        <option value="$PROJECT_DIR$/布局结构/可以自由操作的面板/js/slideBar.js" />
+        <option value="$PROJECT_DIR$/布局结构/可以自由操作的面板/js/jquery.js" />
+        <option value="$PROJECT_DIR$/布局结构/可以自由操作的面板/index.html" />
+        <option value="$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/adaptive-text.html" />
+        <option value="$PROJECT_DIR$/iscroll下拉加载/css/style.css" />
+        <option value="$PROJECT_DIR$/route/index.html" />
+        <option value="$PROJECT_DIR$/iscroll上拉刷新下拉加载/index.js" />
+        <option value="$PROJECT_DIR$/iscroll下拉加载/index.html" />
+        <option value="$PROJECT_DIR$/获取图像的主色/readme.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Practice/css test/css学习.html" />
       </list>
     </option>
   </component>
@@ -107,8 +511,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="23" />
+    <option name="y" value="-990" />
     <option name="width" value="1325" />
     <option name="height" value="585" />
   </component>
@@ -146,6 +550,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,36 +562,23 @@
             <path>
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="Svg" type="462c0819:PsiDirectoryNode" />
+              <item name="Practice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="布局结构" type="462c0819:PsiDirectoryNode" />
+              <item name="Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="html test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="布局结构" type="462c0819:PsiDirectoryNode" />
-              <item name="拖拽排序" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="微信小程序" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="微信小程序" type="462c0819:PsiDirectoryNode" />
-              <item name="地图javascriptAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="项目功能" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -195,7 +588,13 @@
     <property name="nodejs_interpreter_path" value="D:/nodeJs/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\demo\Practice\html test" />
+      <recent name="C:\Users\Administrator\Desktop\demo\Practice" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -210,14 +609,14 @@
     </option>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html (2)">
-    <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/js效果/放大镜/index.html" />
-    <configuration name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/布局结构/拖拽排序/index.html" />
-    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/js效果/turnjs4/samples/basic/index.html" />
-    <configuration name="text.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/canvas/three.js练习/text.html" />
-    <configuration name="three.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/canvas/three.js练习/three.html" />
+    <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/项目功能/todo/index.html" />
+    <configuration name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/获取图像的主色/color-thief/index.html" />
+    <configuration name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/iscroll上拉刷新下拉加载/index.html" />
+    <configuration name="index.html (5)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/route/index.html" />
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/iscroll下拉加载/index.html" />
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.text.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.three.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (5)" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
       <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
@@ -227,13 +626,16 @@
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
         <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
         <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.three.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.text.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (5)" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -245,6 +647,17 @@
       <workItem from="1502264078681" duration="3732000" />
       <workItem from="1502762485740" duration="991000" />
       <workItem from="1502776929482" duration="9458000" />
+      <workItem from="1503047507245" duration="1402000" />
+      <workItem from="1503296931608" duration="4171000" />
+      <workItem from="1503301207657" duration="73000" />
+      <workItem from="1503301341287" duration="126000" />
+      <workItem from="1503301636319" duration="489000" />
+      <workItem from="1503306250119" duration="2378000" />
+      <workItem from="1504171752959" duration="699000" />
+      <workItem from="1505727696458" duration="51000" />
+      <workItem from="1505782228946" duration="148000" />
+      <workItem from="1505782425228" duration="586000" />
+      <workItem from="1505788690402" duration="4416000" />
     </task>
     <task id="LOCAL-00001" summary="拖拽排序">
       <created>1502779734088</created>
@@ -274,31 +687,55 @@
       <option name="project" value="LOCAL" />
       <updated>1502783352101</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="aaa">
+      <created>1504172334960</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1504172334961</updated>
+    </task>
+    <task id="LOCAL-00006" summary="aaa">
+      <created>1504172372569</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1504172372569</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14181000" />
+    <option name="totallyTimeSpent" value="28720000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-144" y="-1088" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24968314" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.50253487" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.49746513" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5810811" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20758693" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58020836" sideWeight="0.5021075" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.49746513" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58020836" sideWeight="0.49789253" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -340,7 +777,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="拖拽排序" />
     <MESSAGE value="入口文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="入口文件" />
+    <MESSAGE value="aaa" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -349,13 +788,59 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/布局结构/可以自由操作的面板/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/布局结构/可以自由操作的面板/js/slideBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="28" column="11" lean-forward="true" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/布局结构/可以自由操作的面板/js/board.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iscroll上拉刷新下拉加载/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iscroll上拉刷新下拉加载/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iscroll上拉刷新下拉加载/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="32" column="54" lean-forward="false" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/html test/条件注释.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/获取图像的主色/color-thief/js/color-thief.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -393,28 +878,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/布局结构/拖拽排序/move.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/布局结构/拖拽排序/move.js" />
     <entry file="file://$PROJECT_DIR$/布局结构/拖拽排序/drag.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="112" column="1" lean-forward="true" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#getStyle#0" expanded="false" />
-            <element signature="n#!!block;n#startMove#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -422,7 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -430,7 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
           <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -438,46 +907,187 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/微信小程序/地图javascriptAPI/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog/_config.yml" />
+    <entry file="file://$PROJECT_DIR$/iscroll上拉刷新下拉加载/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/布局结构/可以自由操作的面板/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/布局结构/可以自由操作的面板/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="3" column="22484" lean-forward="false" selection-start-line="3" selection-start-column="22484" selection-end-line="3" selection-end-column="22484" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/布局结构/可以自由操作的面板/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/布局结构/可以自由操作的面板/js/board.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/布局结构/可以自由操作的面板/js/slideBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/route/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iscroll下拉加载/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="93" column="3" lean-forward="false" selection-start-line="93" selection-start-column="3" selection-end-line="93" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js效果/turnjs4/changelog.txt" />
+    <entry file="file://$PROJECT_DIR$/route/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iscroll上拉刷新下拉加载/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="26" column="81" lean-forward="true" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iscroll上拉刷新下拉加载/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iscroll上拉刷新下拉加载/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/项目功能/todo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/获取图像的主色/adaptive-backgrounds/adaptive-text.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/获取图像的主色/color-thief/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/获取图像的主色/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="26">
+            <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/sass test/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-756">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iscroll下拉加载/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="52">
+            <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Practice/html test/条件注释.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/条件注释.html">
+    <entry file="file://$PROJECT_DIR$/Practice/css test/css学习.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../blog/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="81" column="16" lean-forward="true" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+        <state relative-caret-position="347">
+          <caret line="464" column="26" lean-forward="true" selection-start-line="464" selection-start-column="26" selection-end-line="464" selection-end-column="26" />
           <folding />
         </state>
       </provider>
