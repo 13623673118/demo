@@ -81,11 +81,14 @@
     </div>
     <script>
     var grid=$('.container');
-        grid.isotope();
+        grid.isotope({
+            resize:true,
+        });
         $('.choose').on('click','button',function(){
             var value=$(this).attr('data-filter');
             grid.isotope({
-                filter:value
+                filter:value,
+                stagger:30
             })
         })
     </script>
