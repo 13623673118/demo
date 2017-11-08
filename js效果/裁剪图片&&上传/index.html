@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cooper+html2canvas</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/cropper.min.js"></script>
+    <link rel="stylesheet" href="css/cropper.min.css">
+</head>
+<body>
+<div>
+    <img src="images/1.jpg" alt="" id="image" style="max-width: 100%;">
+</div>
+<div id="preview" style="width:400px;height:400px;overflow: hidden;"></div>
+<script>
+    $('#image').cropper({
+        aspectRatio: 1,
+        preview: $('#preview'),
+        crop: function (e) {
+            console.log(e)
+        }
+    })
+</script>
+</body>
+</html>
