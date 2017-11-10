@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>drag</title>
+    <!-- element-ui.css -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- vue.js7&element-ui.js -->
+    <script src="https://cdn.bootcss.com/vue/2.4.4/vue.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <style>
+        #drag-elements {
+            margin: 0 auto;
+        }
+
+        #drag-elements:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<el-table ref="myTable" :data="tableData" id="drag-elements">
+    <el-table-column prop="date" label="日期"></el-table-column>
+    <el-table-column prop="name" label="姓名"></el-table-column>
+    <el-table-column prop="address" label="地址"></el-table-column>
+</el-table>
+
+<script>
+    new Vue({
+        el: '#drag-elements',
+        data: {
+            tableData: [
+                {
+                    date: '2016-05-02',
+                    name: 'hello',
+                    address: '鹅鹅鹅'
+                },
+                {
+                    date: '2015-05-04',
+                    name: 'world',
+                    address: '曲项向天歌'
+                },
+                {
+                    date: '2018-06-10',
+                    name: '!!!!!',
+                    address: 'hello,world'
+                },
+                {
+                    date: '2012-05-03',
+                    name: 'lost-dream',
+                    address: '乱七八糟'
+                }
+            ]
+        },
+        mounted: function () {
+            var table = this.$refs.myTable.$el.getElementsByClassName('el-table__row');
+            for (var i = 0; i < table.length; i++) {
+                table[i].setAttribute('draggable', 'true');
+                table[i].setAttribute('id', i)
+            }
+        }
+    })
+</script>
+<script>
+    var dragElements = document.getElementsByClassName('el-table__row');
+    var elementDragged = null;
+    for (var i = 0; i < dragElements.length; i++) {
+        dragElements[i].addEventListener('dragstart', function (e) {
+            e.dataTransfer.setData('text', this.id);
+            elementDragged = this;
+        });
+        dragElements[i].addEventListener('dragover', function (e) {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+            elementDragged.setAttribute('class', 'dragStart');
+            return false;
+        });
+        dragElements[i].addEventListener('dragenter', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (this.id !== elementDragged.id) {
+                var tempInnerHtml = this.innerHTML;
+                this.innerHTML = elementDragged.innerHTML;
+                elementDragged.innerHTML = tempInnerHtml;
+                elementDragged.removeAttribute('class');
+                elementDragged = this;
+                for (var i = 0; i < elementDragged.getElementsByTagName('td').length; i++) {
+                    elementDragged.getElementsByTagName('td')[i].style.borderBottomColor = 'red';
+                }
+            }
+        });
+        dragElements[i].addEventListener('dragleave', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (this.id !== elementDragged.id) {
+                this.removeAttribute('class');
+            }
+        });
+        dragElements[i].addEventListener('dragend', function (e) {
+            elementDragged = null;
+            for (var i = 0; i < document.getElementsByTagName('td').length; i++) {
+                document.getElementsByTagName('td')[i].style.borderBottomColor = '';
+            }
+        });
+    }
+</script>
+</body>
+</html>

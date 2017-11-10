@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
-    <title>Ì°Ê³Éß</title>
-    <meta name="description" content="´¿JSµÄÌ°Ê³ÉßÐ¡ÓÎÏ·!">
-    <meta name="keywords" content="Ì°Ê³Éß£¬ ÎÞÁÄµÄÓÎÏ·£¬ ‡å£¬ºÃ‡å£¬·Ç³£‡å.">
+    <title>Ì°Ê³ï¿½ï¿½</title>
+    <meta name="description" content="ï¿½ï¿½JSï¿½ï¿½Ì°Ê³ï¿½ï¿½Ð¡ï¿½ï¿½Ï·!">
+    <meta name="keywords" content="Ì°Ê³ï¿½ß£ï¿½ ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½Ï·ï¿½ï¿½ ï¿½å£¬ï¿½Ã‡å£¬ï¿½Ç³ï¿½ï¿½ï¿½.">
     <style type="text/css">
         * {margin:0; padding:0}
         body {background:#333; -moz-user-select:none; text-align:center; font-size:12px}
@@ -32,48 +32,48 @@
             return target.getElementsByTagName(str);
         }
         // global
-        // const
-        var WIDTH = 20, //Íø¸ñ¿í¶È
-                HEIGHT = 20, //Íø¸ñ¸ß¶È
-                SAY = ["Ïàµ±²»´í","¿ÉÒÔ°¡£¡","Ò»¸ö×Ö£¬Å££¡","²î²»¶àÐÐÁË£¬±ð°ÑÓÎÏ·Íæ±¬ÁË"];
-        var len = 4, //ÉßµÄ³¤¶È
-                speed, //ÅÀÐÐËÙ¶È
-                gridElems = multiArray(WIDTH,HEIGHT), //µ¥Ôª¸ñ¶ÔÏó
-                carrier, //³ÐÔØ¶ÔÏó(Ê³Îï£¬ÕÏ°­£¬»¬°å£¬É²³µ)
-                snake, //ÉßÃ¿½ÚµÄ×ø±êµã
-                info, //½»»¥¶Ô»°
-                btnStart, //¿ªÊ¼°´Å¥
+        // var
+        var WIDTH = 20, //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                HEIGHT = 20, //ï¿½ï¿½ï¿½ï¿½ß¶ï¿½
+                SAY = ["ï¿½àµ±ï¿½ï¿½ï¿½ï¿½","ï¿½ï¿½ï¿½Ô°ï¿½ï¿½ï¿½","Ò»ï¿½ï¿½ï¿½Ö£ï¿½Å£ï¿½ï¿½","ï¿½î²»ï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½æ±¬ï¿½ï¿½"];
+        var len = 4, //ï¿½ßµÄ³ï¿½ï¿½ï¿½
+                speed, //ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
+                gridElems = multiArray(WIDTH,HEIGHT), //ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½
+                carrier, //ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½(Ê³ï¿½ï£¬ï¿½Ï°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å£¬É²ï¿½ï¿½)
+                snake, //ï¿½ï¿½Ã¿ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                info, //ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½
+                btnStart, //ï¿½ï¿½Ê¼ï¿½ï¿½Å¥
                 topScore = len,
-                snakeTimer, //ÉßÐÐ×ß¼ÆÊ±Æ÷
-                brakeTimers = [], //Ëæ»úÉ²³µ
-                skateTimers = [], //Ëæ»ú»¬°å
-                directkey; // ·½Ïò¼üÖµ 37-40 ×óÉÏÓÒÏÂ
+                snakeTimer, //ï¿½ï¿½ï¿½ï¿½ï¿½ß¼ï¿½Ê±ï¿½ï¿½
+                brakeTimers = [], //ï¿½ï¿½ï¿½É²ï¿½ï¿½
+                skateTimers = [], //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                directkey; // ï¿½ï¿½ï¿½ï¿½ï¿½Öµ 37-40 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
         window.onload = function(){
             info = $("say");
             btnStart = $("btnStart");
-            initGrid(); //Íø¸ñ³õÊ¼»¯
-            document.onkeydown = attachEvents; //°ó¶¨·½ÏòÊÂ¼þ
+            initGrid(); //ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½
+            document.onkeydown = attachEvents; //ï¿½ó¶¨·ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
             btnStart.onclick = function (e) {
                 btnStart.blur();
-                start(); //ÓÎÏ·¿ªÊ¼
+                start(); //ï¿½ï¿½Ï·ï¿½ï¿½Ê¼
                 btnStart.setAttribute("disabled",true);
                 btnStart.style.color = "#aaa";
             }
         };
-        //¿ªÊ¼ÓÎÏ·
+        //ï¿½ï¿½Ê¼ï¿½ï¿½Ï·
         function start() {
             speed = 10;
             directkey = 39;
             carrier = multiArray(WIDTH,HEIGHT);
             snake = new Array();
             clear();
-            initSnake(); //Éß³õÊ¼»¯
+            initSnake(); //ï¿½ß³ï¿½Ê¼ï¿½ï¿½
             addObject("food");
             walk();
             addRandomBrake();
         }
-        //´´½¨Íø¸ñ
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         function initGrid() {
             var body = $tag("body")[0];
             var table = document.createElement("table"),
@@ -89,7 +89,7 @@
             table.appendChild(tbody);
             $("snakeWrap").appendChild(table);
         }
-        //´´½¨Éß
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         function initSnake() {
             var pointer = randomPointer(len-1, len-1, WIDTH/2);
             for(var i = 0; i < len; i++) {
@@ -99,10 +99,10 @@
                 carrier[x][y] = "cover";
             }
         }
-        //Ìí¼Ó¼üÅÌÊÂ¼þ
+        //ï¿½ï¿½Ó¼ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
         function attachEvents(e) {
             e = e || event;
-            directkey = Math.abs(e.keyCode - directkey) != 2 && e.keyCode > 36 && e.keyCode < 41 ? e.keyCode : directkey; //·Ç·½Ïò¼ü¡¢·´ÏòÎÞÐ§
+            directkey = Math.abs(e.keyCode - directkey) != 2 && e.keyCode > 36 && e.keyCode < 41 ? e.keyCode : directkey; //ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§
             return false;
         }
         function walk() {
@@ -110,7 +110,7 @@
             snakeTimer = window.setInterval(step, Math.floor(3000/speed));
         }
         function step() {
-            //»ñÈ¡Ä¿±êµã
+            //ï¿½ï¿½È¡Ä¿ï¿½ï¿½ï¿½
             var headX = snake[0][0],
                     headY = snake[0][1];
             switch(directkey) {
@@ -119,7 +119,7 @@
                 case 39: headX += 1; break
                 case 40: headY += 1; break;
             }
-            //Åöµ½±ß½ç£¬×èµ²Îï£¬Ôò½áÊøÓÎÏ·
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ß½ç£¬ï¿½èµ²ï¿½ï£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·
             if(headX >= WIDTH || headX < 0 || headY >= HEIGHT || headY < 0 || carrier[headX][headY] == "block" || carrier[headX][headY] == "cover" ) {
                 trace("GAME OVER");
                 if(getText($("score"))*1 < len) trace(len,$("score"));
@@ -130,34 +130,34 @@
                 for(var i = 0; i < skateTimers.length; i++) window.clearTimeout(skateTimers[i]);
                 return;
             }
-            //¼ÓËÙ
+            //ï¿½ï¿½ï¿½ï¿½
             if(len % 4 == 0 && speed < 60 && carrier[headX][headY] == "food") {
                 speed += 5;
                 walk();
-                trace("¼ÓËÙ£¡");
+                trace("ï¿½ï¿½ï¿½Ù£ï¿½");
             }
-            //¼ñµ½É²³µ
+            //ï¿½ï¿½É²ï¿½ï¿½
             if(carrier[headX][headY] == "brake") {
                 speed = 5;
                 walk();
-                trace("¹§Ï²£¡¼ñµ½É²³µÒ»¸ö¡£");
+                trace("ï¿½ï¿½Ï²ï¿½ï¿½ï¿½ï¿½É²ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½");
             }
-            //ÔâÓö»¬°å
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             if(carrier[headX][headY] == "skate") {
                 speed += 20;
                 walk();
-                trace("ÔâÓö»¬°å£¡");
+                trace("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å£¡");
             }
-            //Ìí¼Ó×èµ²Îï
+            //ï¿½ï¿½ï¿½ï¿½èµ²ï¿½ï¿½
             if(len % 6 == 0 && len < 60 && carrier[headX][headY] == "food") {
                 addObject("block");
             }
-            //¶Ô»°
+            //ï¿½Ô»ï¿½
             if(len <= 40 && len % 10 == 0) {
                 var cheer = SAY[len/10-1];
                 trace(cheer);
             }
-            //³Ô¶«Î÷
+            //ï¿½Ô¶ï¿½ï¿½ï¿½
             if(carrier[headX][headY] != "food") {
                 var lastX = snake[snake.length-1][0],
                         lastY = snake[snake.length-1][1];
@@ -166,7 +166,7 @@
                 snake.pop();
             } else {
                 carrier[headX][headY] = false;
-                trace("³Ôµ½Ê³Îï");
+                trace("ï¿½Ôµï¿½Ê³ï¿½ï¿½");
                 addObject("food");
             }
             snake.unshift([headX,headY]);
@@ -175,13 +175,13 @@
 
             len = snake.length;
         }
-        //Ìí¼ÓÎïÆ·
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Æ·
         function addObject(name) {
             var p = randomPointer();
             carrier[p[0]][p[1]] = name;
             gridElems[p[0]][p[1]].className = name;
         }
-        //Ìí¼ÓËæ»úÊýÁ¿É²³µºÍ»¬°å
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É²ï¿½ï¿½ï¿½Í»ï¿½ï¿½ï¿½
         function addRandomBrake() {
             var num = randowNum(1,5);
             for(var i = 0; i < num; i++) {
@@ -189,25 +189,25 @@
                 skateTimers.push( window.setTimeout(function(){addObject("skate")},randowNum(5000,100000)) );
             }
         }
-        //Êä³öÐÅÏ¢
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
         function trace(sth,who) {
             who = who || info;
             if(document.all) who.innerText = sth;
             else who.textContent = sth;
         }
-        //»ñÈ¡ÐÅÏ¢
+        //ï¿½ï¿½È¡ï¿½ï¿½Ï¢
         function getText(target) {
             if(document.all) return target.innerText;
             else return target.textContent;
         }
-        //´´½¨¶þÎ¬Êý×é
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¬ï¿½ï¿½ï¿½ï¿½
         function multiArray(m,n) {
             var arr =  new Array(n);
             for(var i=0; i<m; i++)
                 arr[i] = new Array(m);
             return arr;
         }
-        //Çå³ý»­Ãæ
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         function clear() {
             for(var y = 0; y < gridElems.length; y++) {
                 for(var x = 0; x < gridElems[y].length; x++) {
@@ -215,7 +215,7 @@
                 }
             }
         }
-        //²úÉúÖ¸¶¨·¶Î§Ëæ»úµã
+        //ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½ï¿½ï¿½ï¿½
         function randomPointer(startX,startY,endX,endY) {
             startX = startX || 0;
             startY = startY || 0;
@@ -229,22 +229,22 @@
             p[1] = y;
             return p;
         }
-        //²úÉúËæ»úÕûÊý
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         function randowNum(start,end) {
             return Math.floor(Math.random()*(end - start)) + start;
         }
     </script>
 </head>
 <body onselectstart="return false">
-<div id="say">Ì°³ÔÉß</div>
+<div id="say">Ì°ï¿½ï¿½ï¿½ï¿½</div>
 <div id="snakeWrap"></div>
 <div id="help">
-    <span class="box food"></span><span>ÂÌÉ«Ê³Îï</span>
-    <span class="box block"></span><span>»ÒÉ«¶¾Æ·</span>
-    <span class="box skate"></span><span>À¶É«»¬°å</span>
-    <span class="box brake"></span><span>ºìÉ«É²³µ</span>
-    <span style="float:right">×î¸ß·Ö£º<strong id="score">0</strong></span>
-    <input type="button" id="btnStart" value="¿ªÊ¼ÓÎÏ·" />
+    <span class="box food"></span><span>ï¿½ï¿½É«Ê³ï¿½ï¿½</span>
+    <span class="box block"></span><span>ï¿½ï¿½É«ï¿½ï¿½Æ·</span>
+    <span class="box skate"></span><span>ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½</span>
+    <span class="box brake"></span><span>ï¿½ï¿½É«É²ï¿½ï¿½</span>
+    <span style="float:right">ï¿½ï¿½ß·Ö£ï¿½<strong id="score">0</strong></span>
+    <input type="button" id="btnStart" value="ï¿½ï¿½Ê¼ï¿½ï¿½Ï·" />
 </div>
 </body>
 </html>
